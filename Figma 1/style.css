@@ -58,11 +58,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .container_block2 {
     padding: 140px 0 0px 0 ;
 }
-.container_block3 {
-    padding: 200px 0 0px 0 ;
-    max-width: 100%;
-    margin: 0 auto;
+
+
+.container_block3{
+    width: 500px;
+    padding:0;
+    margin: 0;
     display: flex;
+    border: #FF9900 solid;
+    justify-content: space-between;
 }
 .block2_row{
     padding: 35px 0 90px 0 ;
@@ -192,7 +196,15 @@ h2{
     line-height: 26px;
     font-family: 'Poppins', sans-serif;
     font-weight: Regular 400;
-}
+}    
+
+.textSubtitle {
+    font-size: 16px;  
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}    
+
 .icon-Block2{
     padding: 0 0 40px 0;
 }
