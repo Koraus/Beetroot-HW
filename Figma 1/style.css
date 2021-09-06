@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 1400px;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.header {
+}
+
+/* border: #FF9900 solid; рамка щоб бачити блок*/
+.container{
+    width: 1126px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+ 
+}
+
+
+.container__block1{
+    width: 1126px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.container_block2 {
+    padding: 140px 0 0px 0 ;
+    
+}
+.block2_row{
+    padding: 35px 0 90px 0 ;
+    width: 1126px;
+    max-width: 100%;
+    height: 98px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header_container{
+    padding: 35px 0 90px 0 ;
+    width: 1126px;
+    max-width: 100%;
+    height: 98px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.header__logo{
+    margin: 0 0 0 0; /* як вирівняти лого по одній лінії з лінками і кнопками? */
+    display: flex;
+    align-items: baseline;   
+
+}
+.menu__links {
+        
+}
+.menu__list-item {
+    display: inline;
+}
+
+.menu_button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    background-color: white;
+    color: black;
+    border: 1px solid #979797;
+    width: 110px;
+    height: 46px;
+    border-radius: 4px;
+    font-size: 16px;  
+    margin: 7px;
+    
+}
+.menu_button:hover{
+    background-color: #FF9900; 
+}
+.menu_button_active{
+    background-color:#FF9900;
+}
+
+.menu__link {   
+    margin: 15px;
+    font-size: 14px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    color: #2F281E;
+}
+.container__button-Getstarted{
+    font-size: 16px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color:#FF9900;
+    color: white;
+    width: 175px;
+    height: 53px;
+    border-radius: 4px;
+    margin: 7px;
+    box-shadow:  3px 3px 5px gray;
+}
+
+.container__link{
+margin: 0 0 15px 0;
+    padding: 0 0 0 30px;
+    background: url(./img/MarkWatchVideo.svg) left no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    font-size: 16px;
+    color: #FF9900;  
+}
+
+.container__tittle-h1 {
+    display: inline;
+    font-size: 44px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;   
+    color: #2F281E;
+    text-shadow:  3px 3px 5px gray;
+    margin: 15px 320px 33px 0x;
+}
+
+.container__text-cont1{
+    font-size: 18px;  
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    max-width: 485px;
+    margin: 15px 0px 33px 0px;
+}
+h3{
+    font-size: 22px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;   
+    color: #2F281E;
+}
+h2{
+    display: inline;
+    font-size: 36px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;   
+    color: #2F281E;
+    margin: 0px 0px 0px 0px;
+}
+
+.block2__title{
+    text-align: center;
+   
+    align-self: flex-end;
+}
+.text16px{
+    font-size: 16px;  
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+}
+.icon-Block2{
+    padding: 0 0 40px 0;
+    
+}
