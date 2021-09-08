@@ -71,8 +71,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .container {
     width: 100%;
+    display: flex;
+    width: 100%;
+    display: block;
+}
+.container_block2{
+
+}
+
+container__pic-colum4{
     
 }
+
 
 .container__block1 {
     display: flex;  
@@ -84,6 +94,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .container_block3{
     width: 100%;
+    max-width: 100%;
     display: flex;
 }
 .container__pic-colum{
