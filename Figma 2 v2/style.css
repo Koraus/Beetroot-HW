@@ -234,6 +234,33 @@ color: #979797;
     flex-direction: column;
 
 }
-.block-information__Pic1{
-    margin: 0 0 0 140px;
+.block-information__Pic-Right{
+   margin: 0 0 0 100px;
+}
+.block-information__Pic-Left{
+    margin: 0 100px 0 0;
+ }
+.block__button-SIGN-UP-NOW{
+    padding: 60px 0 200px 0;    
+}
+.block-information-2 {
+    padding: 120px 0  0  0;
+}
+.with-button{
+    padding: 55px 0  0  0;
+}
+.block-information-3{
+    padding: 95px 0  0  0;
+}
+.block-information-4{
+    padding: 100px 0  0  0;
+}
+.block-information-5{
+    padding: 105px 0  0  0;
+}
+.title-h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center  ;
 }
