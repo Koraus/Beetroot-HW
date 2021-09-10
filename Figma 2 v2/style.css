@@ -18,10 +18,10 @@ html,body{
 	width: 1400px;
 	font-size: 100%;
 	line-height: 1;
-	/* font-size: 14px; */
+	font-size: 14px;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%; 
 }
 input,button,textarea{font-family:inherit;}
 
@@ -85,6 +85,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .block-header__buttons {
     margin: 20px;
 }
+.block-header__logo {
+    vertical-align: middle;
+}
 .nav__buttons{
     font-family: 'Poppins', sans-serif;
     font-weight: Regular 400;
@@ -136,7 +139,7 @@ h1{
     font-weight: 700;   
     color: #2F281E;
     text-shadow:  3px 3px 5px gray;
-    margin: 15px 320px 33px 0x;
+    margin: 15px 420px 33px 0x;
 }
 
 .block-information__textual-information{
@@ -156,6 +159,14 @@ h1{
     font-weight: Regular 400;
     font-size: 16px;
     color: #FF9900;   
+}
+.block-information__TextInfo1{
+    margin: 145px 0 0 0 ;
+    color: #544837;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+
+
 }
 .inkandbutton{
     display: inline-flex   ;
@@ -228,6 +239,9 @@ box-sizing: border-box;
 border-radius: 4px;
 color: #979797;
 }
+.block-information__Pic1{
+padding: 50px 0 0px 0;
+}
 
 .block-footer__form{
     display: flex;
@@ -241,16 +255,16 @@ color: #979797;
     margin: 0 100px 0 0;
  }
 .block__button-SIGN-UP-NOW{
-    padding: 60px 0 200px 0;    
+    padding: 60px 0 210px 0;    
 }
 .block-information-2 {
-    padding: 120px 0  0  0;
+    padding: 90px 0  0  0;
 }
 .with-button{
     padding: 55px 0  0  0;
 }
 .block-information-3{
-    padding: 95px 0  0  0;
+    padding: 0px 0  0  0;
 }
 .block-information-4{
     padding: 100px 0  0  0;
@@ -263,4 +277,14 @@ color: #979797;
     margin-left: auto;
     margin-right: auto;
     text-align: center  ;
+}
+hr {
+  
+  clear:both;
+  display:block;
+  width: 1109px;
+  height: 1px;            
+  background-color:rgba(188, 208, 229, 0.496913);
+  margin: 140px 0 105px 0px;
+
 }
