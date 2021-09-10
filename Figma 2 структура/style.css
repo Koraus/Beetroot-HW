@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 1400px;
+	font-size: 100%;
+	line-height: 1;
+	/* font-size: 14px; */
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+/* border: #FF9900 solid; щоб підсвітити область блоку*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.block-all-page{
+    width: 100%;
+    max-width: 100%;
+    display: flex;  
+}
+
+.block-content-area {
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 1126px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 35px 0 120px 0 ;
+    height: 98px;   
+}
+.block-header{
+    width: 100%;
+    display:flex;
+    button-SIGN-UP-NOW baseline;
+    
+    
+}
+.block-information{
+    padding: 30px 0 0 0;
+    width: 100%;
+    display:flex;
+
+}
+.block-header__nav{ 
+    margin: 0 100px 0 100px;
+
+}
+.nav__link {
+    margin: 15px;
+    font-size: 14px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    color: #2F281E;
+}
+
+.block-header__buttons {
+    margin: 20px;
+}
+.nav__buttons{
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    background-color: white;
+    color: black;
+    border: 1px solid #979797;
+    width: 110px;
+    height: 46px;
+    border-radius: 4px;
+    font-size: 16px;  
+    margin: 7px;
+}
+
+.nav__buttons--activ{
+    background-color: #FF9900;
+}
+.nav__buttons:hover{
+
+    background-color: #FF9900; 
+}
+.block-information_button {
+    font-size: 16px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color:#FF9900;
+    color: white;
+    width: 175px;
+    height: 53px;
+    border-radius: 4px;
+    margin: 7px 0px 30px 0px;
+    box-shadow:  3px 3px 5px gray;
+    
+}
+h1{
+    display: inline;
+    font-size: 44px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;   
+    color: #2F281E;
+    text-shadow:  3px 3px 5px gray;
+    margin: 15px 320px 33px 0x;
+}
+
+.block-information__textual-information{
+    font-size: 18px;  
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    max-width: 485px;
+    margin: 15px 0px 33px 0px;
+}
+
+.block-information_link{
+    margin: 0 0 0px 20px;
+    padding: 0 0 0 30px;
+    background: url( ./img/MarkWatchVideo.svg) left no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+    font-size: 16px;
+    color: #FF9900;   
+}
+.inkandbutton{
+    display: inline-flex   ;
+}
+h3{
+    font-size: 22px;  
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;   
+    color: #2F281E;
+}
+.block-information__row {
+    font-size: 16px;  
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Regular 400;
+} 
+
+.block-information__row {
+display: flex;
+}
+
+.block-information__titleH3{
+    margin: 25px 0 25px 0;
+}
+.block__button-SIGN-UP-NOW{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
+}
