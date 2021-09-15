@@ -132,6 +132,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     margin: 7px 0px 30px 0px;
     box-shadow:  3px 3px 5px gray; 
 }
+
 h1{
     display: inline;
     font-size: 44px;  
@@ -142,7 +143,7 @@ h1{
     margin: 15px 420px 33px 0x;
 }
 
-.block-information__textual-information{
+.block-information__textual-information {
     font-size: 18px;  
     line-height: 28px;
     font-family: 'Poppins', sans-serif;
@@ -185,11 +186,12 @@ h2{
     color: #2F281E;
     margin: 0px 0px 0px 0px;
 }
-.textSubtitle {
+.block-information__textual-information55 .textSubtitle {
     font-size: 16px;  
     line-height: 26px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    margin: 40px;
 }    
 .block-information__row {
     font-size: 16px;  
@@ -312,3 +314,10 @@ hr {
   margin: 140px 0 105px 0px;
 
 }
+
+.SVGpoz {
+    position: relative;
+    top: 5px;
+    
+}
+

@@ -15,7 +15,7 @@ nav,footer,header,aside{display: block;}
 
 html,body{
 	/* height: 100%; */
-	width: 1400px;
+	width: 100%;
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -38,11 +38,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 
 .all-page{
+
     display: flex;
     background: #990909;
     width: 100%;
     margin: 0 auto;
-  
 }
 .header{
 
@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: row;
     align-items: center;
     border: #FF9900 solid;
-    Justify-content: center;
+    margin: 0 auto;
 
   
     
