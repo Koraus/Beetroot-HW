@@ -45,6 +45,14 @@ button {
 	cursor: pointer;
 }
 
+.icon {
+	background: url(./img/01-online-shopping-icon.svg) no-repeat;
+	width: auto;
+	height: auto;
+	absolut: relative;
+	t
+}
+
 button::-moz-focus-inner {
 	padding: 0;
 	border: 0;
@@ -236,26 +244,35 @@ h2 {
 .aur-services__btn-block {
 	display: flex;
 	flex-direction: column;
-	margin:-250px	 835px 0 0;
+	margin: -250px 835px 0 0;
+
 }
 
-.btn-block__btn {
+.btn {
+	margin: 10px 0 10px 0;
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
 	width: 400px;
 	height: 100px;
 	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	color: rgb(38, 38, 38);
-	line-height: 1.35;
-	padding: 0;
-	margin: 0 0 10px 0;
-	flex-grow: 1;
+	display: flex;
+	align-items: center;
+
+	
 }
 
-.btn-wraper{
+.btn-img {
+	width: 25%;
+}
+
+.btn-text {
 	display: flex;
-	align-content: center;
-	justify-content:space-between;
+	width: 75%;
+	height: 100%;
+	border-right: 1px solid #9d9d9d;
+	align-items: center;
+	justify-content: center;
 }
