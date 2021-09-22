@@ -45,12 +45,6 @@ button {
 	cursor: pointer;
 }
 
-.icon {
-	background: url(./img/01-online-shopping-icon.svg) no-repeat;
-	width: auto;
-	height: auto;
-	absolut: relative;
-	t
 }
 
 button::-moz-focus-inner {
@@ -101,9 +95,11 @@ header {
 	align-items: flex-end;
 	margin: 0 auto;
 	width: 1500px;
-	height: 700px;
+	height: 100vh;
 	background: url(./img/About-background-img.jpg) no-repeat;
+	background-color: #00b1b1;
 	position: relative;
+	z-index: 500;
 }
 
 .aur-services {
@@ -115,6 +111,39 @@ header {
 	height: 790px;
 	background: url(./img/aur-services-background-img.jpg) no-repeat;
 	position: relative;
+}
+
+.gallery {
+	width: 1500px;
+	height: 1536px;
+	margin: 0 auto;
+	background-color: #ffe92f;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.gallery__img-content {
+	display: flex;
+}
+
+.gallery img {
+	height: auto;
+	width: auto;
+}
+
+.up_pic {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: space-between;
+	width: 1120px;
+	height: 554px;
+
+}
+
+.pic1 {
+	flex-grow: 2;
 }
 
 .content-area {
@@ -146,14 +175,8 @@ header .content-area .logo-and-nav a {
 	margin: 0 20px 0 20px;
 }
 
-/* header .content-area .logo-and-nav .nav:hover{
-
-	height: 40px;
-		background: #000;
-} спроба розсунути границі */
-
 header .content-area .logo-and-nav a:hover {
-	/* border-top: 3px solid #ff6033; */
+	border-top: 3px solid #ff6033;
 	text-decoration: overline 3px` solid #ff6033;
 }
 
@@ -245,7 +268,6 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	margin: -250px 835px 0 0;
-
 }
 
 .btn {
@@ -260,8 +282,17 @@ h2 {
 	color: rgb(38, 38, 38);
 	display: flex;
 	align-items: center;
+}
 
-	
+.Link{
+	margin: 10px 0 10px 0;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
+	width: 400px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
 
 .btn-img {
@@ -275,4 +306,10 @@ h2 {
 	border-right: 1px solid #9d9d9d;
 	align-items: center;
 	justify-content: center;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	color: rgb(38, 38, 38);
 }
+
+  
