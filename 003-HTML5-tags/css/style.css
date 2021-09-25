@@ -1,0 +1,22 @@
+.leftBar {
+   font-size: 25px; 
+   color: rgb(255, 0, 0);
+}
+
+
+
+input:checked + span  {
+   text-decoration: line-through;
+   text-decoration-color: rgba(4, 3, 71, 0.425);
+   color: rgb(148, 148, 148);
+}
+
+input[type="checkbox" i] ::after {
+   background-color: blueviolet;
+   cursor: default;
+   appearance: auto;
+   box-sizing: border-box;
+   margin: 3px 3px 3px 4px;
+   padding: initial;
+   border: initial;
+}
