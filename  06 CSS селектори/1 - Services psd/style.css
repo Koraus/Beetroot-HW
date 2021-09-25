@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .row {
+    flex-wrap: wrap;
     margin: 20px;
     display: flex;
     flex-direction: row;
@@ -93,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .collum {
+    
     min-width: 200px ;
     max-width: 400px;
     background-color: #ecd7bb;
