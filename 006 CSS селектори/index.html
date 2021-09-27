@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Diner Shopping List</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        *{transition: all .2s ease-in;}
+
+        body {
+            padding: 25px;
+        }
+
+        .content-wrapper {
+            background: #3b3f45;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        h1 {
+            font-family: Trebuchet, Arial, sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            color: #eb7e7f;
+            display: flex;
+            justify-content: center;
+        }
+
+        h4 {
+            font-family: Trebuchet, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: #eb7e7f;
+            display: flex;
+            justify-content: center;
+        }
+
+        .b-header {
+            margin: 0 auto;
+            background: #4a4f56;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            margin: 40px auto;
+            width: 100%;
+
+        }
+
+        ul {
+            padding-inline-start: 0px;
+            margin: 0 auto;
+        }
+
+        ul>li:nth-child(odd) {
+            background: #88839e;
+        }
+
+        ul>li:nth-child(even) {
+            background: #7a7593
+        }
+
+        ul>li:hover {
+            border-top: 3px solid white;
+            border-bottom: 3px solid white;
+            background: #625e77;
+        }
+
+        li {
+            font-family: Trebuchet, Arial, sans-serif;
+            font-size: 22px;
+            color: White;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 0 0 10px;
+            width: 800px;
+            height: 65px;
+            line-height: 50px;
+
+        }
+
+        footer {
+            margin: 0 auto;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        h2 {
+            font-family: Trebuchet, Arial, sans-serif;
+            font-weight: 400;
+            color: #eb7e7f;
+            background: #4a4f56;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            height: 65px;
+        }
+
+
+
+
+        .shopping-list__label {
+            position: relative;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+
+
+        .shopping-list__checkbox--visually-hidden {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+
+
+        .shopping-list__label input[type="checkbox"]+.shopping-list__span-box-for-replacement {
+            position: absolute;
+            top: 11px;;
+            left: 0px;
+            width: 25px;
+            height: 25px;
+            border: 2px gray solid;
+            background: #e4e4e4;
+        }
+
+
+        .shopping-list__label input[type="checkbox"]:focus+.shopping-list__span-box-for-replacement {
+            border: 2px rgb(39, 39, 39) solid;
+        }
+
+        input[type="checkbox"]:checked+.shopping-list__span-box-for-replacement {
+            background: url(./tickOK.svg) center no-repeat;
+        }
+
+        .shopping-list__name {
+            margin-left: 40px;
+        }
+
+        input[type="checkbox"]:checked ~ span  {
+        text-decoration: line-through;
+        text-decoration-color: rgba(4, 3, 71, 0.425);
+        color: rgb(148, 148, 148);
+        }
+
+        .shopping-list__small-name{
+            font-size: 16px;
+            vertical-align: bottom;
+             line-height: 50px;
+        }
+        h2::after{
+            content: ' \00a0 \00a0  :)';
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header class="b-header">
+            <h1> CSS Diner Shopping List </h1>
+            <h4> Let's go to the mall!</h4>
+        </header>
+        <main>
+            <ul class="shopping-list">
+                <li class="shopping-list__item">
+
+                    <label class="shopping-list__label">
+
+                        <input type="checkbox"
+                            class="shopping-list__checkbox shopping-list__checkbox--visually-hidden" />
+                        <span class="shopping-list__span-box-for-replacement"> </span>
+
+                        <span class="shopping-list__name">  A lot of pickles<span class="shopping-list__small-name"> (for the next lessons about CSS)  </span> </span> 
+           
+
+                    </label>
+
+
+
+                </li>
+                <li class="shopping-list__item">
+
+                    <label class="shopping-list__label">
+
+                        <input type="checkbox"
+                            class="shopping-list__checkbox shopping-list__checkbox--visually-hidden" />
+                        <span class="shopping-list__span-box-for-replacement"> </span>
+
+                        <span class="shopping-list__name">10 apples <span class="shopping-list__small-name">  (for more CSS manipulations)  </span></span>
+                       
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+
+                    <label class="shopping-list__label">
+
+                        <input type="checkbox"
+                            class="shopping-list__checkbox shopping-list__checkbox--visually-hidden" />
+                        <span class="shopping-list__span-box-for-replacement"> </span>
+
+                        <span class="shopping-list__name">20 oranges<span class="shopping-list__small-name">  (for the next lessons about CSS)  </span> </span> 
+
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+
+                    <label class="shopping-list__label">
+
+                        <input type="checkbox"
+                            class="shopping-list__checkbox shopping-list__checkbox--visually-hidden" />
+                        <span class="shopping-list__span-box-for-replacement"> </span>
+
+                        <span class="shopping-list__name">13 plates <span class="shopping-list__small-name">  (for the next lessons about CSS)  </span></span>
+
+                    </label>
+                </li>
+                <li class="shopping-list__item">
+
+                    <label class="shopping-list__label">
+
+                        <input type="checkbox"
+                            class="shopping-list__checkbox shopping-list__checkbox--visually-hidden" />
+                        <span class="shopping-list__span-box-for-replacement"> </span>
+                        <span class="shopping-list__name">15 bentos <span class="shopping-list__small-name"> (for the next lessons about CSS) </span>
+                    </span>
+                        
+
+                    </label>
+                </li>
+
+                <li class="shopping-list__item">
+
+                    <label class="shopping-list__label">
+
+                        <input type="checkbox"
+                            class="shopping-list__checkbox shopping-list__checkbox--visually-hidden" />
+                        <span class="shopping-list__span-box-for-replacement"> </span>
+
+                        <span class="shopping-list__name">1 bottle of Sake ^_^ <span class="shopping-list__small-name">  (for the next lessons about CSS)  </span> </span>
+
+                    </label>
+                </li>
+            </ul>
+
+
+        </main>
+        <footer>
+            <h2>Bon Appetit</h2>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
