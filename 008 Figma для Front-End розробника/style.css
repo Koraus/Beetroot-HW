@@ -67,6 +67,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: Regular 400;
     color: #2F281E;
+    text-decoration: none;
 }
 .b-header__nav {
     margin: 0 25px 0 0;
@@ -257,7 +258,6 @@ width: 240px;
         margin: 140px 0 100px 0 ;
         border: none; 
         background-color: #BCD0E5;
-        align-self: ;
         width: 99%;
         height: 2px;
        }
