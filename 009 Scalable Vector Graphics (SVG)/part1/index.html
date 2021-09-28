@@ -97,21 +97,26 @@ h2 {
 }
 .aur-services{
     display: flex;
+    flex-direction: row;
     height: 100vh;
     background: #70bfff;
+    align-items: center;
+    justify-content: center;
 }
 .aur-services__title {
+    display: block;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
 	font-size: 90px;
 	color: rgb(255, 255, 255);
-	margin: 325px 130px 0px 0px;
+    position: relative;
+    z-index: 3;
 }
 
 .Link{
 	margin: 10px 0 10px 0;
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
+	box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 50%);
 	width: 400px;
 	height: 100px;
 	display: flex;
@@ -135,10 +140,30 @@ h2 {
 	font-weight: 800;
 	color: rgb(38, 38, 38);
 }
+.aur-services__links-block{
+flex-basis:49%;
+}
+
+.titl-img{
+    position: relative;
+}
+.aur-services__img{
+    position: absolute;
+    bottom: -210px;
+    z-index: 0;
+}
+.Link:hover { 
+    box-shadow: 0px 8px 14px 0px rgb(0 0 0 / 50%);
+}
+
+
+
+
     </style>
 </head>
 <body>
     <section class="aur-services">
+
             <div class="aur-services__links-block">
              
               <a href="#" class="Link">
@@ -157,11 +182,11 @@ h2 {
                 <div class="link-text"> <span> Online Shopping </span> </div>
                 <div class="link-img"> <span> <img src="./img/01-online-shopping-icon.svg" alt=""></span></div>
               </a>
-
-
-              <h2 class="aur-services__title">Our Services<h2>
-                 <img src="./img/Tomatoes.png" alt="tomatoes">
-
+            </div>
+                 <div class="titl-img">
+                 <h2 class="aur-services__title">Our Services</h2>
+                 <img class="aur-services__img" src="./img/Tomatoes.png" alt="tomatoes">
+                </div>
       </section>
 
     
