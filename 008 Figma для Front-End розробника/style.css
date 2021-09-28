@@ -116,6 +116,10 @@ body {
     width: 175px;
     height: 53px;
 }
+.b-footer__button--flattened {
+    width: 131px;
+    height: 39px;
+}
 .b-conten__button{
     margin: 10px 0 0 0 ;
 }
@@ -275,5 +279,5 @@ width: 240px;
     color: #979797;
 
     display: block;
-    margin: 0 0 21px 0;
+    margin: 28px 0 21px 0;
     }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>009 Scalable Vector Graphics (SVG) part1</title>
+    <style>
+        * {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active {
+	outline: none;
+}
+
+a:focus, a:active {
+	outline: none;
+}
+
+nav, footer, header, aside {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*--------------------*/
+
+/* border: #FF9900 solid; щоб підсвітити область блоку*/
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;900&display=swap');
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 60px;
+	color: #000;
+	margin: 0 0 5px 0;
+}
+.aur-services{
+    display: flex;
+    height: 100vh;
+    background: #70bfff;
+}
+.aur-services__title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 90px;
+	color: rgb(255, 255, 255);
+	margin: 325px 130px 0px 0px;
+}
+
+.Link{
+	margin: 10px 0 10px 0;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);
+	width: 400px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.link-img {
+	width: 25%;
+}
+
+.link-text {
+	display: flex;
+	width: 75%;
+	height: 100%;
+	border-right: 1px solid #9d9d9d;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	color: rgb(38, 38, 38);
+}
+    </style>
+</head>
+<body>
+    <section class="aur-services">
+            <div class="aur-services__links-block">
+             
+              <a href="#" class="Link">
+                <div class="link-text"> <span> Domestic & International Delivery </span> </div>
+                <div class="link-img"> <span> <img src="./img/03-dome-ico.svg" alt=""></span></div>
+              </a>
+              <a href="#" class="Link">
+                <div class="link-text"> <span> Quality Product </span> </div>
+                <div class="link-img"> <span> <img src="./img/02-prod-icon.svg" alt=""></span></div>
+              </a>
+              <a href="#" class="Link">
+                <div class="link-text"> <span> Well Organized </span> </div>
+                <div class="link-img"> <span> <img src="./img/04-well-icon.svg" alt=""></span></div>
+              </a>
+              <a href="#" class="Link">
+                <div class="link-text"> <span> Online Shopping </span> </div>
+                <div class="link-img"> <span> <img src="./img/01-online-shopping-icon.svg" alt=""></span></div>
+              </a>
+
+
+              <h2 class="aur-services__title">Our Services<h2>
+                 <img src="./img/Tomatoes.png" alt="tomatoes">
+
+      </section>
+
+    
+</body>
+</html>
