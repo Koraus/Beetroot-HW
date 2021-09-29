@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./weather-icons-master/css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="./weather-icons-master/css/weather-icons-wind.css">
+    <link rel="stylesheet" href="./weather-icons-master/css/weather-icons.css">
+    <link rel="stylesheet" href="./weather-icons-master/css/weather-icons.min.css">
+    <link rel="stylesheet" href="./font/weathericons-regular-webfont.ttf">
+    <link rel="stylesheet" href="./font/weathericons-regular-webfont.eot">
+    <link rel="stylesheet" href="./font/weathericons-regular-webfont.woff2">
+    <link rel="stylesheet" href="./font/weathericons-regular-webfont.woff">
+
+
+
+
+
+    <title> CSS Weather Forecast</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body{
+           background: #2b81ac;
+           width: 100%;
+           
+        }
+        .wr{
+           
+            margin: 0 auto;
+        }
+        ul {
+            display: table-row;
+            font-size: 0px;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            font-size: 30px;
+            display: inline-block;
+	        box-sizing: border-box;
+            border: violet solid 1px;
+            text-align: center;
+            padding-top: 4vh;
+        }   
+
+        .tablet {
+        	border-collapse: collapse;
+            width: 900px;;
+            margin: 0;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        li:hover{
+            border: solid 1px white;
+            box-sizing: border-box;
+        }
+        .row1__cl-n1{
+            width: 50%;
+           /* width:450px ;  */
+           height: 148px;
+        }
+        .row1__cl-n2, .row1__cl-n3{
+            width: 25%;
+            /* width: 225px ;  */
+            height: 148px;
+        }
+        .row2__cl-n1, .row2__cl-n2, .row2__cl-n3, .row2__cl-n4 {
+            width: 25%;
+            /* width: 225px ;  */
+            height: 148px;
+        }
+        .row3__cl-n1, .row3__cl-n3{
+            width: 25%;
+            /* width: 225px ;  */
+            height: 148px;
+        }
+        .row3__cl-n2 {
+            width: 50%;
+            /* width:450px ;  */
+            height: 148px;
+        }
+        .row4__cl-n1{
+            width: 100%;
+            /* width: 900px ;  */
+            height: 148px;
+        }
+        .wth {
+            display: block;
+        }
+        h1{
+            margin: 0 auto;
+            display: inline-block;
+        }
+        p {
+            margin: 0 auto;
+
+        }
+
+        .row1__cl-n1{
+            background: #3399cc;
+        } 
+        .row1__cl-n2{
+            background: #33cccc;
+        }
+        .row1__cl-n3{
+            background: #996699;
+        }
+       .row2__cl-n1{
+        background: #c24747;
+       }
+       .row2__cl-n2{
+        background: #e2674a;
+       }
+       .row2__cl-n3{
+        background: #ffcc66;
+       }
+       .row2__cl-n4{
+        background: #99cc99;
+       }
+       .row3__cl-n1{
+        background: #669999;
+       }
+       .row3__cl-n2{
+        background: #cc6699;
+       }
+       .row3__cl-n3{
+        background: #339966;
+       }
+       .row4__cl-n1{
+        background:#666699;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="wr">
+    <h1>CSS Weather Forecast</h1>
+    <div class="tablet">
+
+        <ul class="row1">
+            <li class="row1__cl-n1">Lisabon 
+                <span class="wth"> <span> 21°C</span> <i class="wi wi-night-sleet"></i></span></li>
+            <li class="row1__cl-n2">Paris
+              <span  class="wth"> <span>11°C</span><i class="wi wi-night-sleet"></i></span></li>
+            <li class="row1__cl-n3">Belgrade
+                <span  class="wth"> <span>15°C</span><i class="wi wi-night-sleet"></i></span> </li>
+
+        </ul>
+        <ul class="row2">
+            <li class="row2__cl-n1">Scow <span  class="wth"><span>21°C</span><i class="wi wi-night-sleet"></i></span></li>
+            <li class="row2__cl-n2"> Tel Aviv <span  class="wth"><span><span>32°C</span> <i class="wi wi-night-sleet"> </i></span></li>
+            <li class="row2__cl-n3"> Cair <span  class="wth"><span>21°C</span><i class="wi wi-night-sleet"></i></span></li>
+            <li class="row2__cl-n4"> New York <span  class="wth"> <span>17°C</span><i class="wi wi-night-sleet"></i></span></li>
+
+
+        </ul>
+        <ul class="row3">
+            <li class="row3__cl-n1">New Delhi<span  class="wth"><span>17°C</span> <i class="wi wi-night-sleet"></i></span></li>
+            <li class="row3__cl-n2">San Francisco<span  class="wth"> <span>15°C</span><i class="wi wi-night-sleet"></i></span></li>
+            <li class="row3__cl-n3">Tokyo<span  class="wth"><span>8°C</span><i class="wi wi-night-sleet"></i></span></li>
+        </ul>
+        <ul class="row4">
+            <li class="row4__cl-n1">Sydney<span  class="wth"><span>25°C</span><i class="wi wi-night-sleet"></i></span></li>
+        </ul>
+    </div>
+    <p>Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
+</div>
+    
+</body>
+
+</html>
