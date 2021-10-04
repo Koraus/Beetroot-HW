@@ -89,6 +89,7 @@ img {
     }
 }
 
+
 .b-header__link {
     margin: 15px;
     font-size: 14px;
@@ -108,13 +109,12 @@ img {
 .b-footer__logo {}
 
 .logo {
-    width: fit-content;
+   min-width: 165px;
 }
 
 .button {
     font-family: 'Poppins', sans-serif;
     font-weight: Regular 400;
-    /* background-color: #FF9900; */
     background-color: #FF9900;
     color: white;
     width: 110px;
@@ -371,5 +371,16 @@ hr {
     .b-footer__wrapper-form{
        margin: 0;
     }
+
+    .b-conten {
+        color: #000;
+    }
+    .b-footer__lable{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
