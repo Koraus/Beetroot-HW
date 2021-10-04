@@ -304,6 +304,7 @@ hr {
     font-family: 'Poppins', sans-serif;
     font-weight: Regular 400;
     max-width: 325px;
+    min-width: 260px;
     height: 39px;
     background: #FFFFFF;
     border: 1px solid #BCD0E5;
