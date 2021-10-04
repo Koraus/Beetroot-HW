@@ -1,0 +1,115 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+} */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+.screen-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: url(./Фон.jpg) no-repeat center;
+    min-width: 1500px;
+    min-height: 960px;
+    background-size: 100% ;
+    align-items: center;
+}
+
+.screen-wrapper__header {}
+
+.screen-wrapper__title {
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    line-height: 0.278;
+    text-align: center;
+    margin: 100px 0 50px 0 ;
+}
+
+.screen-wrapper__paragraph {
+    display: flex;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(38, 38, 38);
+    line-height: 1.471;
+    text-align: center;
+    margin: 100px 0 50px 0 ;
+}
+
+.screen-wrapper__flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.flex-container__linetext-form input {
+    width: 500px;
+    height: 50px;
+    background: #00c4c47e;
+    border: none;
+    margin: 0 0 15px 0;
+}
+.textarea_p{
+    margin: 0;
+}
+
+.flex-container__textarea-form {
+    width: 500px;
+    height: 250px;
+    margin: 0px;
+    opacity: 50%;
+    background-color: #00c4c4;
+    border: none;
+    resize: none;
+}
+.flex-container__textarea-form:focus {
+    opacity: 100%;
+}
+.flex-container__linetext-lable :focus {
+    opacity: 100%;
+}
+
+.flex-container__forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    margin: 0 0 0 170px;
+}
+
+.footer {
+    width: 100%;
+    background: #262626;
+    display: inline-block;
+}
+
+.footer__copyright {
+    display: inline-block;
+}
+
+.flex-container__title{
+   
+        font-size: 17px;
+
+        color: rgb(38, 38, 38);
+        font-weight: bold;
+        line-height: 1.471;
+        font-family: 'Raleway', sans-serif;
+
+
+      
+}
