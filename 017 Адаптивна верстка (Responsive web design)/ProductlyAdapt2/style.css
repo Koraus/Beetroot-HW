@@ -249,9 +249,23 @@ html, body {
         width: 100%;
     }
 
-
   }
 
+  @media (max-width: 561px) { 
+    .b-header-flex-nav-and-button{
+          flex-direction: column;
+        }
+        .b-header__nav{
+            margin: 20px 0 20px 0;
+        }
+        .b-header__link {
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: Regular 400;
+            color: #2F281E;
+            text-decoration: none;
+        }
+  }
 
 .b-main__paragraph {
     margin-bottom: 25px;
