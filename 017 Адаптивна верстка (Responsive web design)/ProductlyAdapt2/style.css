@@ -83,6 +83,8 @@ html, body {
 }
 
 .b-header {
+    padding:23px 0 27px 0;
+    margin: 20px 0 30px 0;
     display: flex;
     align-items: center;
     width: 100%;
@@ -150,13 +152,14 @@ align-items: center;
 
 }
 .b-conten__img-block{
+    
     width: 48%;
     display: inline-block;
 }
 .b-main {
     width: 100%;
     display: flex;
-    align-items: ;
+    align-items: center;
    
 }
 .b-conten__title {
@@ -192,4 +195,7 @@ align-items: center;
     line-height: 26px;
     color: #544837;
     margin: 25px 0 12px 0;
+}
+.b-main__conten__text-block{
+padding: 90px 0 0 0 ;
 }
