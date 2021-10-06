@@ -259,12 +259,16 @@ html, body {
             margin: 20px 0 20px 0;
         }
         .b-header__link {
-            font-size: 24px;
+            font-size: 20px;
             font-family: 'Poppins', sans-serif;
             font-weight: Regular 400;
             color: #2F281E;
             text-decoration: none;
         }
+        .b-header{
+            margin: 0;
+        }
+        
   }
 
 .b-main__paragraph {
@@ -280,3 +284,7 @@ html, body {
     font-size: 16px;
     color: #FF9900;
 }
+
+
+
+overflow: hidden;
