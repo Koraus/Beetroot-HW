@@ -235,6 +235,10 @@ html, body {
     justify-content: space-around;
     width: 100%;
     }
+    .b-header{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 675px) {
@@ -247,6 +251,9 @@ html, body {
     }
     .b-conten__img-block{
         width: 100%;
+    }
+    .b-header{
+        padding-bottom: 0;
     }
 
   }
