@@ -148,6 +148,8 @@ html, body {
 
 .b-conten {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .b-conten__text-block {
@@ -232,8 +234,24 @@ html, body {
 
     justify-content: space-around;
     width: 100%;
+    }
 }
-}
+
+@media (max-width: 675px) {
+    .b-main__b-conten{
+
+        flex-direction: column;
+    }
+    .b-conten__text-block{
+        width: 100%;
+    }
+    .b-conten__img-block{
+        width: 100%;
+    }
+
+
+  }
+
 
 .b-main__paragraph {
     margin-bottom: 25px;
