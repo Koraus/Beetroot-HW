@@ -167,6 +167,7 @@ html, body {
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .b-conten__title {
@@ -292,6 +293,28 @@ html, body {
     color: #FF9900;
 }
 
+.b-tool-presentation {
+    text-align: center;
+    align-items: center;
+
+}
+.b-tool-presentation__wrappers-columns {
+ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.b-tool-presentation{
+    padding: 0;
+}
+.info-column{
+    width: 25%;
+    min-width: 140px;
+    max-width: 240px;
+}
+.info-column__ico{
+    max-width: fit-content;
+}
 
 
-overflow: hidden;
