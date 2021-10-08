@@ -181,7 +181,11 @@ html, body {
 }
 
 
+.b-conten__wrapper-btn-link{
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .b-conten__subtitle {
     font-size: 16px;
@@ -263,6 +267,9 @@ html, body {
 }
 
 .b-conten__link {
+    display: block;
+    align-self: center;
+    min-height: 18px;
     margin: 0 0 0px 20px;
     padding: 0 0 0 30px;
     background: url(./img/link-Video.svg) left no-repeat;
