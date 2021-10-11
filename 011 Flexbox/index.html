@@ -8,7 +8,8 @@
     <title>011 Flexbox part1</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
-          *,
+
+        *,
         *:before,
         *:after {
             -moz-box-sizing: border-box;
@@ -38,7 +39,8 @@
             max-height: 542px;
             background: white;
         }
-        .description-card__signature-wrapper{
+
+        .description-card__signature-wrapper {
             padding: 25px;
         }
 
@@ -63,12 +65,14 @@
         }
 
         .description-card__author-avatar {
-          max-width: 54px;
+            max-width: 54px;
         }
-        .flex-wrapper__description-card{
+
+        .flex-wrapper__description-card {
             margin: 8px 10px;
         }
-        .flex-wrapper__main-description-card{
+
+        .flex-wrapper__main-description-card {
             margin: 10px;
         }
 
@@ -80,7 +84,7 @@
             justify-content: flex-end;
             min-width: 740px;
             min-height: 540px;
-            background: url(./img/Row1-pic1Grad.jpg)  no-repeat ;
+            background: url(./img/Row1-pic1Grad.jpg) no-repeat;
 
         }
 
@@ -99,12 +103,29 @@
             text-transform: uppercase;
             line-height: 1.2;
         }
+
         .main-description-card__picture {
             min-width: 100%;
             min-height: auto;
-           
+
         }
 
+        .content__loading-cont {
+            margin-top: 85px;
+            margin-bottom: 100px;
+            font-size: 13px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(153, 165, 176);
+            text-transform: uppercase;
+            line-height: 2.308;
+            text-align: center;
+        }
+        .content__loading-cont-ico{
+            width: auto;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        
     </style>
 </head>
 
@@ -114,7 +135,6 @@
         <div class="content__flex-wrapper">
 
             <div class="main-description-card flex-wrapper__main-description-card">
-                <!-- <img class="main-description-card__picture" src="" alt="car"> -->
                 <div class="main-description-card__data"> November 28, 2015 </div>
                 <h2 class="main-description-card__title">Fantastic Designs Of 2015 <br> Concept Cars</h2>
             </div>
@@ -122,53 +142,51 @@
             <div class="description-card flex-wrapper__description-card">
                 <img class="description-card__picture" src="./img/Row1 pic2.png" alt="car">
                 <div class="description-card__signature-wrapper">
-                <div class="description-card__data"> November 28, 2015 </div>
-                <h3 class="description-card__title">How To Find Design Inspiration In The Simple Things Around You</h3>
-                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+                    <div class="description-card__data"> November 28, 2015 </div>
+                    <h3 class="description-card__title">How To Find Design Inspiration In The Simple Things Around You
+                    </h3>
+                    <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">
+                </div>
             </div>
 
-
-
-
         </div>
-
-    
-
-
-
-
-
-
 
         <div class="content__flex-wrapper">
             <div class="description-card flex-wrapper__description-card">
                 <img class="description-card__picture" src="./img/Row2 pic1.png" alt="car">
                 <div class="description-card__signature-wrapper">
-                <div class="description-card__data"> November 28, 2015 </div>
-                <h3 class="description-card__title">The Only Guide To Choosing Website Photos You’ll Ever Need
+                    <div class="description-card__data"> November 28, 2015 </div>
+                    <h3 class="description-card__title">The Only Guide To Choosing Website Photos You’ll Ever Need
                     </h3>
-                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+                    <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">
+                </div>
             </div>
             <div class="description-card flex-wrapper__description-card">
                 <img class="description-card__picture" src="./img/Row2 pic2.png" alt="car">
                 <div class="description-card__signature-wrapper">
-                <div class="description-card__data"> November 28, 2015 </div>
-                <h3 class="description-card__title">Growth Hack Your Way to a Successful Freelance Career</h3>
-                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+                    <div class="description-card__data"> November 28, 2015 </div>
+                    <h3 class="description-card__title">Growth Hack Your Way to a Successful Freelance Career</h3>
+                    <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">
+                </div>
             </div>
             <div class="description-card  flex-wrapper__description-card">
                 <img class="description-card__picture" src="./img/Row2 pic3.jpg" alt="car">
                 <div class="description-card__signature-wrapper">
-                <div class="description-card__data"> November 28, 2015 </div>
-                <h3 class="description-card__title">Get 80% Off DSLR  Photography Course Bundle</h3>
-                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+                    <div class="description-card__data"> November 28, 2015 </div>
+                    <h3 class="description-card__title">Get 80% Off DSLR Photography Course Bundle</h3>
+                    <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">
+                </div>
             </div>
 
         </div>
 
     </main>
 
-
+    <p class="content__loading-cont">  <span class="content__loading-cont-wrapper-ico"> <img class="content__loading-cont-ico"
+        src="./img/Vector-Object.png" alt="">
+</span>LOADING NEW CONTENT
+       
+    </p>
 
 </body>
 
