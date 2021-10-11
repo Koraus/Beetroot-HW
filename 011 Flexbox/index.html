@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>011 Flexbox part1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+          *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            box-sizing: inherit;
+        }
+
+        .page {
+            background: #e2e7ec;
+        }
+
+        .content {
+            margin: 0 auto;
+            max-width: 1140px;
+
+        }
+
+        .content__flex-wrapper {
+            display: flex;
+        }
+
+        .description-card {
+            display: flex;
+            flex-direction: column;
+            max-width: 360px;
+            max-height: 542px;
+            background: white;
+        }
+        .description-card__signature-wrapper{
+            padding: 25px;
+        }
+
+        .description-card__picture {
+            width: 100%;
+        }
+
+        .description-card__title {
+            font-size: 22px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(29, 29, 29);
+            text-transform: uppercase;
+            line-height: 1.364;
+        }
+
+        .description-card__data {
+            font-size: 13px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(129, 129, 129);
+            text-transform: uppercase;
+            line-height: 2.308;
+        }
+
+        .description-card__author-avatar {
+          max-width: 54px;
+        }
+        .flex-wrapper__description-card{
+            margin: 8px 10px;
+        }
+        .flex-wrapper__main-description-card{
+            margin: 10px;
+        }
+
+        .main-description-card {
+            box-sizing: border-box;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-width: 740px;
+            min-height: 540px;
+            background: url(./img/Row1-pic1Grad.jpg)  no-repeat ;
+
+        }
+
+        .main-description-card__data {
+            font-size: 13px;
+            font-family: 'Work Sans', sans-serif;
+            color: rgb(129, 129, 129);
+            text-transform: uppercase;
+            line-height: 2.308;
+        }
+
+        .main-description-card__title {
+            font-size: 30px;
+            font-family: 'Work Sans', sans-serif;
+            color: #ffffff;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+        .main-description-card__picture {
+            min-width: 100%;
+            min-height: auto;
+           
+        }
+
+    </style>
+</head>
+
+
+<body class="page">
+    <main class="content">
+        <div class="content__flex-wrapper">
+
+            <div class="main-description-card flex-wrapper__main-description-card">
+                <!-- <img class="main-description-card__picture" src="" alt="car"> -->
+                <div class="main-description-card__data"> November 28, 2015 </div>
+                <h2 class="main-description-card__title">Fantastic Designs Of 2015 <br> Concept Cars</h2>
+            </div>
+
+            <div class="description-card flex-wrapper__description-card">
+                <img class="description-card__picture" src="./img/Row1 pic2.png" alt="car">
+                <div class="description-card__signature-wrapper">
+                <div class="description-card__data"> November 28, 2015 </div>
+                <h3 class="description-card__title">How To Find Design Inspiration In The Simple Things Around You</h3>
+                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+            </div>
+
+
+
+
+        </div>
+
+    
+
+
+
+
+
+
+
+        <div class="content__flex-wrapper">
+            <div class="description-card flex-wrapper__description-card">
+                <img class="description-card__picture" src="./img/Row2 pic1.png" alt="car">
+                <div class="description-card__signature-wrapper">
+                <div class="description-card__data"> November 28, 2015 </div>
+                <h3 class="description-card__title">The Only Guide To Choosing Website Photos You’ll Ever Need
+                    </h3>
+                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+            </div>
+            <div class="description-card flex-wrapper__description-card">
+                <img class="description-card__picture" src="./img/Row2 pic2.png" alt="car">
+                <div class="description-card__signature-wrapper">
+                <div class="description-card__data"> November 28, 2015 </div>
+                <h3 class="description-card__title">Growth Hack Your Way to a Successful Freelance Career</h3>
+                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+            </div>
+            <div class="description-card  flex-wrapper__description-card">
+                <img class="description-card__picture" src="./img/Row2 pic3.jpg" alt="car">
+                <div class="description-card__signature-wrapper">
+                <div class="description-card__data"> November 28, 2015 </div>
+                <h3 class="description-card__title">Get 80% Off DSLR  Photography Course Bundle</h3>
+                <img class="description-card__author-avatar" src="./img/author-avatar.png" alt="">  </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+</body>
+
+
+
+</html>
