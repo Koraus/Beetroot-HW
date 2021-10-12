@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>012 Part1</title>
+<style>
+    
+     *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            box-sizing: inherit;
+        }
+
+        @font-face {
+    font-family: 'Georgia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Regular'), url('./georgia-2-cufonfonts-webfont/georgia.woff') format('woff');
+    }
+        @font-face {
+    font-family: 'Georgia Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Georgia Bold'), url('./georgia-2-cufonfonts-webfont/georgiab.woff') format('woff');
+    }
+
+    @font-face {font-family: "Futura PT Web Heavy";
+  src: url("58fce3bc5423dd0d195b612392b65b39.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./Futura\ PT\ Web\ Heavy/58fce3bc5423dd0d195b612392b65b39.woff2") format("woff2"), /* chrome、firefox */
+  url("./Futura\ PT\ Web\ Heavy/58fce3bc5423dd0d195b612392b65b39.woff") format("woff"), /* chrome、firefox */
+
+
+
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    background: #2e3039;
+}
+.page{
+    display: block;
+    background: #464f54;
+    max-width: 1200px;
+    margin: 0  auto;
+    height: 100%;
+    padding: 150px  70px 0 70px;
+}
+
+.sheet{
+    background: white;
+    padding: 200px 130px 0 125px;
+}
+
+.sheet__title {
+  font-size: 78px;
+  font-family: "Futura PT Web Heavy";
+  color: rgb(42, 42, 42);
+  text-transform: uppercase;
+  line-height: 0.943;
+  text-align: left;
+
+}
+
+
+
+
+.sheet__paragraph {
+  font-size: 27px;
+  font-family: "Georgia Regular";
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  text-align: justifyLeft;
+
+}
+.sheet__quote{
+  font-size: 30px;
+  font-family: "Georgia";
+  color: rgb(143, 143, 143);
+  font-style: italic;
+  line-height: 2.081;
+  text-align: justifyLeft;
+
+}
+
+
+
+</style>
+
+
+</head>
+<body class="body">
+
+    <main class="page">
+
+        <div class="sheet page__sheet">
+
+            <article class="sheet__article">
+            <p class="sheet__author-date-signature">Roy Batty, 2019</p>
+            <h2 class="sheet__title"> Like Tears in Rain</h2>
+            <q class="sheet__quote">Where am I going? How long have I got? </q>
+            <p class="sheet__paragraph"> I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhauser gate. All those moments will be lost in time... like tears in rain... <i class="sheet__text-decor" >Time to die.</i> </p>
+            <p class="sheet__paragraph"> I don't know why he saved my life. Maybe in those last moments he loved life more than he ever had before. Not just his life - anybody's life; my life. All he'd wanted were the same answers... </p>
+        </article>
+        </div>
+
+
+
+    </main>
+    
+
+
+
+</body>
+</html>
