@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container__row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        a {}
+
+        .link-substrate {
+            position: relative;
+            display: block;
+            font-size: 0;
+            margin: 5px;
+        }
+
+
+
+
+        .link-substrate__title {
+            position: absolute;
+            bottom: 42px;
+            left: 47px;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Lato', sans-serif;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-decoration: none;
+            letter-spacing: 0.16em;
+
+        }
+
+        .body {
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url(./img/hero-bg.jpg) no-repeat center;
+            width: 100vw;
+            min-height: 100vh;
+            justify-content: space-around
+        }
+
+        .header__title {
+            max-width: 580px;
+            font-size: 54px;
+            font-family: "Lato";
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+            
+        }
+    
+        .header__paragraph{
+            max-width: 580px;
+            font-size: 14px;
+            font-family: "Lato";
+            color: white;
+            font-weight: 300;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+
+
+        .content-container-SERVICES {
+            padding: 50px;
+            background: url(./img/hero-bg.jpg) no-repeat center;
+            width: 100vw;
+
+        }
+
+        .content-container {
+            text-align: center;
+            width: fit-content;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .content-container__box-for-borders {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 900px;
+            border-bottom: 2px solid rgb(34, 12, 233);
+            border-right: 2px solid rgb(34, 12, 233);
+            border-left: 2px solid rgb(34, 12, 233);
+            /* padding: 50px; */
+            padding: 105px 20% 0 20%;
+            margin-bottom: 20px;
+
+        }
+
+        .content-container__box-for-borders::before {
+            content: '';
+            width: 27%;
+            height: 1px;
+            background-color: rgb(34, 12, 233);
+            position: absolute;
+            left: -1px;
+            top: 0;
+        }
+
+        .content-container__box-for-borders::after {
+            content: '';
+            width: 27%;
+            height: 1px;
+            background-color: rgb(34, 12, 233);
+            position: absolute;
+            right: -1px;
+            top: 0;
+        }
+
+        .content {
+            /* box-sizing: border-box; */
+            max-width: 900px;
+            border-bottom: 2px solid rgb(34, 12, 233);
+            border-right: 2px solid rgb(34, 12, 233);
+            border-left: 2px solid rgb(34, 12, 233);
+            /* padding: 50px; */
+            padding: 75px 20% 60px 20%;
+            margin-bottom: 20px;
+            /* position: relative; */
+        }
+
+        .content::before {
+            content: '';
+            width: 27%;
+            height: 1px;
+            background-color: rgb(34, 12, 233);
+            position: absolute;
+            left: -1px;
+            top: 0;
+        }
+
+        .content::after {
+            content: '';
+            width: 27%;
+            height: 1px;
+            background-color: rgb(34, 12, 233);
+            position: absolute;
+            right: -1px;
+            top: 0;
+        }
+
+        .content-title {
+
+            font-size: 34px;
+            font-family: "Lato";
+            color: rgb(60, 60, 60);
+            font-weight: bold;
+            text-transform: uppercase;
+            position: absolute;
+            left: 50%;
+            top: -30px;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .button-in-block {
+            display: block;
+            width: 395px;
+            height: 60px;
+            background: #3c3c3c;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .content-container__content-titl {
+
+            font-size: 20px;
+            font-family: "Lato";
+            color: rgb(60, 60, 60);
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+
+        }
+
+        .content-container__ico {
+            width: fit-content;
+        }
+
+        .content {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: "Lato";
+            color: rgb(60, 60, 60);
+            font-weight: bold;
+
+            line-height: 1.2;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <header class="header">
+
+        <img class="header__ico-logo" src="./img/Group 1.svg" alt="DESIGN LAB">
+        <h1 class="header__title">WORKING <br>
+            WITH DESIGN LAB
+
+        </h1>
+        <p class="header__paragraph">We’ve been helping starttups launch and grow their businesses. We help you to fill
+            the gap between development,
+            design and product management.</p>
+
+        <img class="header__ico-scroll" src="./img/scroll.svg" alt="">
+    </header>
+
+
+    <div class="content-container">
+        <h2 class="content-title"> ABOUT US </h2>
+        <p class="content"> When you work with us, you are part of a team of committed collaborators.
+            All aspects of our software development process are integrated, iterative and agile.
+
+            Our approach unifies design, development and
+            product management to create exceptional products.
+            We start each project by understanding your business goals,
+            the user’s needs and the product requirements.
+            Then we help translate them into effective and elegant solutions.
+        </p>
+
+    </div>
+    <div class="content-container content-container-SERVICES">
+        <p class="content-title"> SERVICES </p>
+        <p class="content"> Before we sign a contract or write a line of code our team will spend the necessary time
+            needed to understand your product vision.
+            The outcome of this scoping session is a proposal or high-level statement of work.
+            Based on your requirements, we can provide a complete offering or just the pieces you need. </p>
+
+    </div>
+
+    <div class="content-container">
+
+        <div class="content-container__box-for-borders">
+            <h2 class="content-title"> WHAT WE DO</h2>
+
+            <p class="">
+            <h4 class="content-container__content-titl"> DESIGN </h4>
+
+            <img class="content-container__ico" src="./img/DESIGN.svg" alt="DESIGN">
+
+            <p>Our design practice offers a full range of services including branding strategy,
+                interaction and visual design and user experience testing.
+                Throughout your project, our designers create and implement visual designs and workflows, solicit user
+                feedback, and work with you to make sure what gets built is what is needed. </p>
+
+            <img class="content-container__ico" src="./img/Development .svg" alt="Development">
+            <h4 class="content-container__content-titl"> Development </h4>
+            <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                They collaborate with your team to write, test, and improve code on a daily basis, using proven
+                practices
+                such as test-driven development and pair programing.
+            </p>
+            <img class="content-container__ico" src="./img/ProductM.svg" alt="Product Management">
+            <h4 class="content-container__content-titl"> Product Management</h4>
+            <p>Our design practice offers a full range of services including branding strategy,
+                interaction and visual design and user experience testing.
+                Throughout your project, our designers create and implement visual designs and workflows, solicit user
+                feedback, and work with you to make sure what gets built is what is needed. </p>
+
+            <p>Planning and development is iterative. Because we are constantly coding and testing, the products we
+                build
+                are always ready to go live. This iterative process allows for changes as business requirements evolve.
+            </p>
+            </p>
+        </div>
+    </div>
+    <div class="links">
+
+        <div class="links__container">
+
+            <div class="container__row">
+
+                <div class="link-substrate">
+                    <a href="google.com">
+                        <span class="link-substrate__title">topworkz </span>
+                        <img class="link-substrate__img" src="./img/topworkz.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="links__container  link-substrate">
+                    <a href="#">
+                        <span class="link-substrate__title"> joint</span>
+                        <img class="link-substrate__img" src="./img/joint.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="links__container  link-substrate">
+                    <a href=""> <span class="link-substrate__title">Market</span>
+                        <img class="link-substrate__img" src="./img/MArket.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="container__row">
+
+                <div class="links__container  link-substrate">
+                    <a href=""> <span class="link-substrate__title">worktop</span>
+                        <img class="link-substrate__img" src="./img/worktop.jpg" alt="">
+                    </a>
+                </div>
+                <div class="links__container  link-substrate">
+                    <a href=""> <span class="link-substrate__title">lable</span>
+                        <img class="link-substrate__img" src="./img/lable.jpg" alt="">
+                    </a>
+                </div>
+                <div class="links__container  link-substrate">
+                    <a href=""> <span class="link-substrate__title">Kyiv</span>
+                        <img class="link-substrate__img" src="./img/Kyiv.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h2 class="content-title"> CONTACT US </h2>
+        <p class="content"> Planning and development is iterative. Because we are constantly coding and testing, the
+            products we build are always ready to go live. This iterative process allows for changes as business
+            requirements evolve.
+            <button class="button-in-block"> CONTACT US </button>
+        </p>
+
+    </div>
+
+</body>
+
+</html>
