@@ -8,10 +8,12 @@
     column-gap: 20px;
     row-gap: 20px;
     max-width: 1109px;
+    max-height: 1000px ;
     margin: 0 auto;
+    overflow: hidden;
   }
 .grid-row-1-col-1{
-    grid-row: 1 / 4;
+  
 }
 
 .footer__grid-container{
