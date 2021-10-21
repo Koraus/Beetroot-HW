@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .pictures-grid-container {
+
+            display: grid;
+            grid-template-areas:
+                "grid-row-1-elem-1 grid-row-1-elem-1 grid-row-1-elem-2"
+                "grid-row-1-elem-1 grid-row-1-elem-1 grid-row-1-elem-3";
+            column-gap: 60px;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: repeat(3fr, 1fr);
+            row-gap: 60px;
+            max-width: 1500px;
+            margin: 0 auto 80px auto;
+
+        }
+
+        .grid-row-1-elem-1 {
+            display: flex;
+            grid-area: grid-row-1-elem-1;
+        }
+
+        .instagram-grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3fr, 1fr);
+            margin: 0 auto;
+            max-width: 1500px;
+        }
+
+        .grid-container__inst-pic-link {
+            position: relative;
+        }
+
+        .grid-container__inst-pic-link::after {
+            content: '';
+            background: rgba(0, 0, 0, 0.673);
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            position: absolute;
+            top: 0;
+        }
+
+        .grid-container__inst-pic-link:hover::after {
+            content: '';
+            background: rgba(0, 0, 0, 0);
+            width: 375px;
+            height: 375px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pictures-grid-container ">
+        <img class="pictures-grid-container__item grid-row-1-elem-1 " src="./1.jpg" alt="">
+        <img class="pictures-grid-container__item grid-row-1-elem-2 " src="./2.jpg" alt="">
+        <img class="pictures-grid-container__item grid-row-1-elem-3 " src="./3.jpg" alt="">
+        <img class="pictures-grid-container__item grid-row-2-elem-1 " src="./4.jpg" alt="">
+        <img class="pictures-grid-container__item grid-row-2-elem-2 " src="./5.jpg" alt="">
+        <img class="pictures-grid-container__item grid-row-2-elem-3 " src="./6.jpg" alt="">
+    </div>
+
+    <footer class="footer">
+        <div class="footer__grid-container instagram-grid-container">
+
+
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./7.jpg" alt=""></a>
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./07.jpg" alt=""></a>
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./8.jpg" alt=""></a>
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./9.jpg" alt=""></a>
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./10.jpg" alt=""></a>
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./11.jpg" alt=""></a>
+            <a class="grid-container__inst-pic-link" href="#">
+                <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./12.jpg" alt=""></a>
+                <a class="grid-container__inst-pic-link" href="#">
+                    <img class="grid-container__instagram-pictures inst-gr-r1-e1" src="./13.jpg" alt=""></a>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
