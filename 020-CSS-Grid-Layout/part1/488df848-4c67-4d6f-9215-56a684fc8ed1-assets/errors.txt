@@ -1,0 +1,2 @@
+[10/21/2021, 9:05:51 PM] layer "13.jpg": Duplicate path: 13.jpg
+[10/21/2021, 9:04:55 PM] layer "7.jpg": Duplicate path: 7.jpg
