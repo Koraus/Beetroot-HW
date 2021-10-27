@@ -1,0 +1,52 @@
+
+
+
+.wrap{
+  display: flex;
+}
+
+
+.bla {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 60px;
+}
+
+
+.bla::before{
+  content: '';
+  border-top: 1px dashed black;
+  border-radius: 50%;
+  width: 421px;
+  height: 421px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  
+}
+.ico1{
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+.ico2{
+  width: 100px;
+  height: 100px;
+  background: #000; 
+}
+.wrap2{
+  display: flex;
+}
+
+
+<div class="wrap2"> 
+<div class="wrap">
+<div class="ico1"></div>
+<div class="bla"></div>
+  <div class="ico2"></div>
+</div>
+

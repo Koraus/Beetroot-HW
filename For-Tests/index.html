@@ -12,12 +12,48 @@
 
         .img400px{
             width: 400px;
-            bor
+         
         }
+
+       
+        .menu{
+            font-size: 40px;
+            position: relative;
+        }
+
+        .menu__list::before{
+            content:'';
+            position: absolute;
+            width: 350px;
+            height: 500px;
+            background: red;
+            display: none;
+        }
+        
+        .menu__list:hover::before{
+            display: block;
+        }
+
+        .line{
+            border: 10px;
+        }
+
     </style>
 </head>
 <body>
     <img src="./orange-flowers.jpg" alt="">
     <img class="img400px" src="./400-px-w-orange-flowers.jpg" alt="">
+
+<div class="menu">
+    <ul class="menu__list">
+        <li class="menu__item"> <a class="menu__link" href="#"> 1 </a></li>
+        <li class="menu__item"> <a class="menu__link" href="#"> 2 </a></li>
+        <li class="menu__item"> <a class="menu__link" href="#"> 3 </a></li>
+        <li class="menu__item"> <a class="menu__link" href="#"> 4 </a></li>
+    </ul>
+</div>
+
+<div class="line"></div>
+
 </body>
 </html>

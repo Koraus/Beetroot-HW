@@ -1,0 +1,57 @@
+.header__text {
+}
+.header__title {
+}
+.header__decor {
+}
+.slider {
+}
+.slider__img-border-container {
+}
+.slider__img {
+}
+.slider__team-member-name {
+}
+.slider__team-member-position {
+}
+.slider__social-network-bar {
+}
+.social-network-bar {
+}
+.social-network-bar__ico {
+}
+.facebook {
+}
+.twitter {
+}
+.google-plus {
+}
+.linked-in {
+}
+.slider__paragraph {
+}
+.slider__button {
+}
+.button-view {
+}
+.slider__toggles {
+}
+.slider__toggle {
+    width:  100px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.slider__toggle:focus{
+    outline: 1px solid red;
+
+}
+
+.slider__toggle--active{
+    background-color: yellow;
+}

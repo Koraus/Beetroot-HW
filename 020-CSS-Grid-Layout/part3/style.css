@@ -1,6 +1,8 @@
 
 
-
+li {
+  list-style: none;
+}
 
 .pictures-grid-container {
     display: grid;
@@ -10,8 +12,8 @@
     max-width: 1109px;
     max-height: 1000px ;
     margin: 0 auto;
-    overflow: hidden;
   }
+
 .grid-row-1-col-1{
   
 }

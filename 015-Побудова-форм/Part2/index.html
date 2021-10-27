@@ -24,10 +24,10 @@
             <form class="authorization-window__form">
                 <label for="username"> Username</label>
                 <input class="authorization-window__input" type="email" id="username">
-                <div class="error-message"> error </div>
+                <div class="error-message-name"> error </div>
                 <label for="password"> Password</label>
-                <input class="authorization-window__input" id="password" type="password">
-                <div class="error-message "> error </div>
+                <input class="authorization-window__input" id="password" type="password" minlength="5">
+                <div class="error-message-password"> error minimum 5 characters </div>
                 <div class="authorization-window__checkbox-rel">
                     <label class="authorization-window__keep-me-signed-in" for="keep-me-signed-in">
                         <input class="authorization-window__checkbox--visually-hidden" type="checkbox"
