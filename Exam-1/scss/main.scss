@@ -269,7 +269,9 @@
 
 }
 
-.why-choose-us__link {
+
+
+ .button-link{
     box-sizing: border-box;
     text-align: center;
     vertical-align: center;
@@ -349,5 +351,54 @@
 }
 }
 
+.chouschoice-for-booking1{
+    background: url(../img/chouschoice-for-booking1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 18.64%;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    
 
 
+
+
+}
+
+
+.booking-window{
+    width: 540px;
+    height: 371px;
+    background-color: #3d3d3ddd;
+    padding: 50px 30px;
+
+
+    &__country-name {
+        font-size: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+         font-weight: 400;
+         color: white;
+         margin-bottom: 32px;
+
+    }
+    &__hotel-name {
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+
+    }
+    &__paragraph {
+        font-size: 16px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        color: white;
+        line-height: 26px;
+        margin-bottom: 48px;
+    }
+}

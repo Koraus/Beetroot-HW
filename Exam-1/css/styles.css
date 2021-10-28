@@ -1010,7 +1010,7 @@ template {
   width: fit-content;
 }
 
-.why-choose-us__link {
+.button-link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -1103,4 +1103,47 @@ template {
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 35px;
+}
+
+.chouschoice-for-booking1 {
+  background: url(../img/chouschoice-for-booking1.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 18.64%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-window {
+  width: 540px;
+  height: 371px;
+  background-color: #3d3d3ddd;
+  padding: 50px 30px;
+}
+.booking-window__country-name {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 32px;
+}
+.booking-window__hotel-name {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.booking-window__paragraph {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  line-height: 26px;
+  margin-bottom: 48px;
 }
