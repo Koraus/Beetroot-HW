@@ -14,12 +14,25 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: url(../img/bg-Image-header.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
+}
+.header__central {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 90%;
+          flex: 1 0 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header__title-bradn-name {
   font-family: "Josefin Sans", sans-serif;
@@ -44,8 +57,8 @@
 .header__search-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 auto 120px auto;
-  width: 650px;
+  margin: 0 31.64% 120px 31.64%;
+  max-width: 650px;
   height: 61px;
   position: relative;
   display: block;
@@ -57,7 +70,7 @@
           box-sizing: border-box;
   width: 100%;
   height: 60px;
-  border: 2px white solid;
+  border: none;
   padding-right: 150px;
   padding-left: 20px;
 }
@@ -100,7 +113,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 146px;
-  height: 55px;
+  height: 56px;
   padding-right: 20px;
   background: #5474fd;
   position: absolute;
@@ -141,24 +154,6 @@
   content: url(../img/search.svg);
   top: 19px;
   right: 20px;
-}
-.header__central {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 90%;
-          flex: 1 0 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .header__nav {
   -webkit-box-sizing: border-box;
