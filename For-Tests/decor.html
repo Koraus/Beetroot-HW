@@ -72,6 +72,68 @@
                 width: fit-content;
                 margin-bottom: 20px;
         }
+
+
+.header {
+  padding: 50px;
+  background: #000;
+  height: 400px;
+}
+.header__search-form {
+  margin: 0 auto;
+  max-width: 650px;
+  position: relative;
+  display: block;
+}
+.header__input-text {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  border: 2px white solid;
+  padding-right: 150px;
+}
+.header__input-text::-webkit-input-placeholder {
+  text-align: center;
+}
+.header__input-text::-moz-placeholder {
+  text-align: center;
+}
+.header__input-text:-ms-input-placeholder {
+  text-align: center;
+}
+.header__input-text::-ms-input-placeholder {
+  text-align: center;
+}
+.header__input-text::placeholder {
+  text-align: center;
+}
+.header__search-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  width: 146px;
+  height: 56px;
+  padding-right: 20px;
+  background: #5474fd;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  border: none;
+  font-size: 14px;
+  font-family: "Aleo";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.header__search-button::after {
+  position: absolute;
+  content: url(./decor/search.svg);
+  top: 19px;
+  right: 20px;
+}
     </style>
 </head>
 
@@ -88,6 +150,17 @@
     </div>
 
 
+    <header class="header">
+        <h1 class="header__title"> </h1>
+        <b class="header__title-bradn-name">  </b>
+        <form class="header__search-form" action="">
+            <input class="header__input-text" type="text" placeholder="Search Your Travel Destination">
+            <button class="header__search-button"> Search </button>
+
+
+        </form>
+
+    </header>
 
 </body>
 
