@@ -901,7 +901,7 @@ template {
   -ms-flex-item-align: end;
       align-self: flex-end;
   min-height: 80px;
-  padding: 0 330px;
+  padding: 0 18.64%;
 }
 .header .header__logo-link {
   font-family: "Josefin Sans", sans-serif;
@@ -954,11 +954,37 @@ template {
 }
 
 .why-choose-us {
+  background: url(../img/why-choose-us-bg.jpg) no-repeat;
+  background-size: cover;
   height: 100vh;
-  background: #ae7171;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 18.64%;
+}
+.why-choose-us__text-part-wraper {
+  max-width: 540px;
+  max-height: 360px;
+}
+.why-choose-us__title {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 62px;
+}
+.why-choose-us__paragraph {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 38px;
 }
 .why-choose-us__pic-part-wraper {
   min-width: 476px;
@@ -976,12 +1002,37 @@ template {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-bottom: 5px;
 }
-.why-choose-us__pic1 {
+.why-choose-us__pic2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.why-choose-us__link {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  vertical-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 255px;
+  height: 60px;
+  background: linear-gradient(43deg, #496bfe 42.75%, #5474fd 42.75%);
+  text-decoration: none;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */
