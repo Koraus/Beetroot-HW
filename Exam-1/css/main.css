@@ -232,4 +232,31 @@
 .why-choose-us {
   height: 100vh;
   background: #ae7171;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.why-choose-us__pic-part-wraper {
+  min-width: 476px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.why-choose-us__pic1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.why-choose-us__pic1 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }

@@ -205,10 +205,32 @@
 .why-choose-us{
     height: 100vh;
     background: rgb(174, 113, 113);
+    display: flex;
 
+    &__text-part-wraper{}
 
     &__title{
-        
+
+    }
+    &__paragraph{}
+
+    &__link{}
+
+   
+
+    &__pic-part-wraper{
+        min-width: 476px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__pic1{ 
+        align-self: flex-start;
+        width: fit-content;
+    }
+    &__pic1{
+        align-self: flex-end;
+        width: fit-content;
     }
 
 
