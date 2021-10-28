@@ -781,8 +781,8 @@ template {
 .header__search-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 32% 120px 32%;
-  max-width: 650px;
+  margin: 0 auto 120px auto;
+  width: 650px;
   height: 61px;
   position: relative;
   display: block;
