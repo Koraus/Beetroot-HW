@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .display-zone {
+            margin: 0 auto;
+            max-width: 1250px;
+            min-width: 400px;
+            min-height: 400px;
+            background: #d5c3ee;
+            padding: 50px 50px 50px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ico-row-flex {
+            display: flex;
+            height: fit-content;
+        }
+
+        .decor-line {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 60px;
+            align-self:flex-start;
+            padding-bottom: 115px;
+        }
+
+
+        .decor-line::before {
+            content: '';
+            border-top: 1px dashed black;
+            border-radius: 50%;
+            width: 460px;
+            height: 498px;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+
+
+        }
+
+
+
+        .ico-block {
+            margin-right:-85px ;
+            margin-left:-85px ;
+            align-self:flex-end;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            align-items: center;
+        }
+
+        .ico-text {
+           min-width: 212px;
+            font-size: 36px;
+            font-family: "Aleo";
+            color: rgb(232, 232, 232);
+            line-height: 0.722;
+            text-align: center;
+        }
+        .ico-pic{
+                width: fit-content;
+                margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="display-zone">
+        <div class="ico-row-flex">
+            <div class="ico-block"> <img class="ico-pic" src="./decor/search-blue.svg" alt=""><span class="ico-text">Search Places</span>
+            </div>
+            <div class="decor-line"> </div>
+            <div class="ico-block"><img class="ico-pic" src="./decor/select-places.svg" alt=""><span class="ico-text">Select Places </span></div>
+            <div class="decor-line"></div>
+            <div class="ico-block"><img class="ico-pic" src="./decor/Book-Enjoy.svg" alt=""><span class="ico-text">Book & Enjoy</span></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
