@@ -292,7 +292,7 @@
 }
 
 .how-it-works {
-    height: 40vh;
+    height: 30vh;
     background: #333333;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -533,9 +533,15 @@
      
     }
 
-    &__social-networks {}
+    &__social-networks {
+        width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
 
-    &__social-network-link {}
+    &__social-network-link {
+        text-decoration: none;
+    }
 
     &__social-network-link-ico {}
 

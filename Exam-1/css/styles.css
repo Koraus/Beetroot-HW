@@ -1036,7 +1036,7 @@ template {
 }
 
 .how-it-works {
-  height: 40vh;
+  height: 30vh;
   background: #333333;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1281,6 +1281,18 @@ template {
   color: white;
   margin-bottom: 30px;
   letter-spacing: 1.4px;
+}
+.footer__social-networks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__social-network-link {
+  text-decoration: none;
 }
 .footer__social-network-link-ico:hover {
   fill: #4860c8;
