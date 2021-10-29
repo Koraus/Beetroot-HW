@@ -953,6 +953,7 @@ template {
 
 .why-choose-us {
   background: url(../img/why-choose-us-bg.jpg) no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   display: -webkit-box;
@@ -1108,6 +1109,7 @@ template {
 
 .chouschoice-for-booking1 {
   background: url(../img/chouschoice-for-booking1.jpg) no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   padding: 0 18.64%;
@@ -1153,6 +1155,7 @@ template {
 
 .chouschoice-for-booking2 {
   background: url(../img/chouschoice-for-booking2.jpg) no-repeat;
+  background-position: center;
   background-size: cover;
   height: 100vh;
   padding: 0 18.64%;
@@ -1167,4 +1170,71 @@ template {
           justify-content: flex-end;
   padding-top: 230px;
   padding-bottom: 100px;
+}
+
+.testimonial {
+  height: 100vh;
+  background: url(../img/testimonial-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.testimonial__title {
+  display: block;
+  font-size: 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+.testimonial__wrap-pic-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.testimonial__quote-text-title {
+  font-size: 20px;
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.testimonial__quote {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 665px;
+  height: 284px;
+  background-color: #3d3d3ddd;
+  padding: 50px 50px;
+}
+.testimonial__quote-text {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  line-height: 26px;
+}
+.testimonial__quote-decor {
+  position: relative;
+  padding-right: 30px;
+  padding-top: 30px;
+  display: inline-block;
+}
+.testimonial__quote-decor::after {
+  content: url(../img/quote-left-solid-20px.svg);
+  position: absolute;
+  top: 0;
 }

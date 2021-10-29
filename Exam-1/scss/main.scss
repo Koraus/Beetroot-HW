@@ -213,6 +213,7 @@
 
 .why-choose-us {
     background: url(../img/why-choose-us-bg.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100vh;
 
@@ -354,6 +355,7 @@
 
 .chouschoice-for-booking1{
     background: url(../img/chouschoice-for-booking1.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100vh;
     padding: 0 18.64%;
@@ -404,6 +406,7 @@
 
 .chouschoice-for-booking2{
     background: url(../img/chouschoice-for-booking2.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     height: 100vh;
     padding: 0 18.64%;
@@ -413,3 +416,77 @@
     padding-top: 230px;
     padding-bottom: 100px;
 }
+
+
+
+.testimonial{
+    height: 100vh;
+    background: url(../img/testimonial-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+&__title {
+    display: block;
+    font-size: 36px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+
+ 
+}
+&__wrap-pic-and-text {
+   
+    display: flex;
+}
+
+&__quote-text-title{
+  
+    font-size: 20px;
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    
+}
+&__quote{
+    box-sizing: border-box;
+    width: 665px;
+    height: 284px;
+    background-color: #3d3d3ddd;
+    padding: 50px 50px;
+}
+&__pic {
+}
+
+&__quote-text {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 26px;
+
+}
+&__quote-decor {
+   
+    position: relative;
+    padding-right: 30px;
+    padding-top: 30px;
+    display: inline-block;
+
+}
+&__quote-decor::after {
+    content: url(../img/quote-left-solid-20px.svg);
+    position: absolute;
+    top: 0;
+
+}
+
+}
+
