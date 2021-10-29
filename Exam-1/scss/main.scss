@@ -130,7 +130,7 @@
         text-align: center;
         display: block;
         margin: 0 auto;
-        width: 150px;
+  
     }
 
     &__scroll-down::after {
@@ -389,6 +389,7 @@ border: none;
 
 
 .booking-window {
+    box-sizing: border-box;
     width: 540px;
     height: 371px;
     background-color: #3d3d3ddd;
