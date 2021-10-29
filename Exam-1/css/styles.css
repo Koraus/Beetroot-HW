@@ -1198,6 +1198,7 @@ template {
   font-weight: 400;
   color: white;
   text-transform: uppercase;
+  margin-bottom: 100px;
 }
 .testimonial__wrap-pic-and-text {
   display: -webkit-box;
