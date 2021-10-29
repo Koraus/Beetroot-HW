@@ -21,7 +21,9 @@
     justify-content: center;
     background: url(../img/bg-Image-header.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
+  
 
     &__central {
         width: 100%;
@@ -85,6 +87,8 @@
 
     }
 
+   
+
     &__input-text::placeholder {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
@@ -125,6 +129,8 @@
         padding-bottom: 25px;
         text-align: center;
         display: block;
+        margin: 0 auto;
+        width: 150px;
     }
 
     &__scroll-down::after {
@@ -141,7 +147,12 @@
         top: 19px;
         right: 20px;
     }
-
+    &__search-button:focus {
+        background: #405ace;
+    }
+    &__search-button:active {
+        background: #2f46ae;
+    }
 
 
     &__nav {
@@ -290,7 +301,13 @@
     text-transform: uppercase;
 
 }
-
+.button-link:focus{
+  border: 1px solid blue;
+}
+.button-link:active {
+background: linear-gradient(43deg, #5474fd 41%, #496bfe 41%);
+border: none;
+}
 .how-it-works {
     height: 30vh;
     background: #333333;
@@ -544,9 +561,16 @@
     }
 
     &__social-network-link-ico {}
+    
+ 
 
     &__social-network-link-ico:hover {
         fill: #4860c8;
     }
+    &__social-network-link-ico:focus {
+        outline: 10px dotted;
+    
+    }
+   
 
 }

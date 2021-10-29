@@ -365,6 +365,13 @@ textarea {
   padding: 0.2em 0;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 /*! normalize.scss v8.0.1 | MIT License | github.com/necolas/normalize.scss */
 /* Document
    ========================================================================== */
@@ -740,6 +747,7 @@ template {
           justify-content: center;
   background: url(../img/bg-Image-header.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 .header__central {
@@ -867,6 +875,8 @@ template {
   padding-bottom: 25px;
   text-align: center;
   display: block;
+  margin: 0 auto;
+  width: 150px;
 }
 .header__scroll-down::after {
   content: url(../img/scrollDown.svg);
@@ -881,6 +891,12 @@ template {
   content: url(../img/search.svg);
   top: 19px;
   right: 20px;
+}
+.header__search-button:focus {
+  background: #405ace;
+}
+.header__search-button:active {
+  background: #2f46ae;
 }
 .header__nav {
   -webkit-box-sizing: border-box;
@@ -1033,6 +1049,15 @@ template {
   font-weight: 400;
   color: white;
   text-transform: uppercase;
+}
+
+.button-link:focus {
+  border: 1px solid blue;
+}
+
+.button-link:active {
+  background: linear-gradient(43deg, #5474fd 41%, #496bfe 41%);
+  border: none;
 }
 
 .how-it-works {
@@ -1296,4 +1321,18 @@ template {
 }
 .footer__social-network-link-ico:hover {
   fill: #4860c8;
+}
+.footer__social-network-link-ico:focus {
+  outline: 10px dotted;
+}
+
+@media (max-width: 1850px) {
+  .responsive-test {
+    background: #9d1b1b;
+  }
+}
+@media (max-width: 1800px) {
+  .responsive-test {
+    background: #000;
+  }
 }

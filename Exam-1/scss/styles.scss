@@ -15,4 +15,7 @@
      @info all = https://developer.mozilla.org/ru/docs/Web/CSS/all
      @info unset = https://developer.mozilla.org/en-US/docs/Web/CSS/unset
 */
-@import 'main.scss'
+
+
+@import 'main.scss';
+@import '_breakpoints.scss';
