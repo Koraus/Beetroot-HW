@@ -1,26 +1,22 @@
 $breakpoints: (
-    "xs": 0,
     "sm": 420px,
     "md": 720px,
-    "lg": 960px,
-    "xl": 1200px,
+    "xl-1020": 1020px,
     "defl": 1800px,
-    "ad": 1850px,
 );
 
-
-
-@mixin xs {
-    @media (max-width: map-get($breakpoints, "xs")) {
+@mixin defl {
+    @media (max-width: map-get($breakpoints, "defl")) {
         @content;
     }
 }
 
-@mixin sm {
-    @media (max-width: map-get($breakpoints, "sm")) {
+@mixin xl-1020 {
+    @media (max-width: map-get($breakpoints, "xl-1020")) {
         @content;
     }
 }
+
 
 
 @mixin md {
@@ -29,25 +25,8 @@ $breakpoints: (
     }
 }
 
-@mixin lg {
-    @media (max-width: map-get($breakpoints, "lg")) {
-        @content;
-    }
-}
-
-@mixin xl {
-    @media (max-width: map-get($breakpoints, "xl")) {
-        @content;
-    }
-}
-
-@mixin defl {
-    @media (max-width: map-get($breakpoints, "defl")) {
-        @content;
-    }
-}
-@mixin ad {
-    @media (max-width: map-get($breakpoints, "ad")) {
+@mixin sm {
+    @media (max-width: map-get($breakpoints, "sm")) {
         @content;
     }
 }
@@ -60,13 +39,4 @@ $breakpoints: (
 }
 
 
-.responsive-test{
 
-    @include ad {
-        background: rgb(157, 27, 27);
-    }
-    @include defl{
-        background: #000;
-    }
-   
-}

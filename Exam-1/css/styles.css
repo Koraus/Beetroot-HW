@@ -731,7 +731,8 @@ template {
      @info unset = https://developer.mozilla.org/en-US/docs/Web/CSS/unset
 */
 .body {
-  padding: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -915,6 +916,11 @@ template {
       align-self: flex-end;
   min-height: 80px;
   padding: 0 18.64%;
+}
+@media (max-width: 1020px) {
+  .header__nav {
+    padding: 0 10.64%;
+  }
 }
 .header .header__logo-link {
   font-family: "Josefin Sans", sans-serif;
@@ -1294,7 +1300,7 @@ template {
 .footer__title-bradn-name {
   font-size: 24px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: white;
   letter-spacing: 4.6px;
   margin-bottom: 15px;
@@ -1323,17 +1329,9 @@ template {
 .footer__social-network-link-ico:hover {
   fill: #4860c8;
 }
-.footer__social-network-link-ico:focus {
-  outline: 10px dotted;
-}
 
-@media (max-width: 1850px) {
-  .responsive-test {
-    background: #9d1b1b;
-  }
-}
-@media (max-width: 1800px) {
-  .responsive-test {
-    background: #000;
-  }
+.for-test-size {
+  width: 100%;
+  height: 80px;
+  color: red;
 }
