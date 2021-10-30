@@ -1028,7 +1028,6 @@ template {
   background: url(../img/why-choose-us-bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,7 +1037,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 18.64%;
+  padding: 120px 18.64%;
 }
 @media (max-width: 890px) {
   .why-choose-us {
@@ -1049,7 +1048,7 @@ template {
 }
 @media (max-width: 1100px) {
   .why-choose-us {
-    padding: 0 10%;
+    padding: 80px 10%;
   }
 }
 .why-choose-us__text-part-wraper {
@@ -1140,7 +1139,6 @@ template {
 }
 
 .how-it-works {
-  height: 30vh;
   background: #333333;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1226,7 +1224,6 @@ template {
   background: url(../img/chouschoice-for-booking1.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
   padding: 0 18.64%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1279,7 +1276,6 @@ template {
   background: url(../img/chouschoice-for-booking2.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
   padding: 0 18.64%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1300,7 +1296,6 @@ template {
 }
 
 .testimonial {
-  height: 100vh;
   background: url(../img/testimonial-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -1317,6 +1312,8 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 205px;
 }
 .testimonial__title {
   display: block;

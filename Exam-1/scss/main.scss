@@ -48,7 +48,7 @@
         color: white;
         text-transform: uppercase;
         text-align: center;
-        margin: 141px 0 10px 0;
+        margin: 141px 0 10px 0; 
     }
 
     &__title {
@@ -276,18 +276,19 @@
     background: url(../img/why-choose-us-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
+ 
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 18.64%;
+    padding: 120px 18.64%;
     @include md-890{
         justify-content: center;
      }
 
     @include nav-1100{
-        padding: 0 10%;
+        padding: 80px 10%;
 
      }
 
@@ -375,7 +376,7 @@ background: linear-gradient(43deg, #5474fd 41%, #496bfe 41%);
 border: none;
 }
 .how-it-works {
-    height: 30vh;
+    // height: 30vh;
     background: #333333;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -453,7 +454,7 @@ border: none;
     background: url(../img/chouschoice-for-booking1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     padding: 0 18.64%;
     display: flex;
     align-items: center;
@@ -512,7 +513,7 @@ border: none;
     background: url(../img/chouschoice-for-booking2.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     padding: 0 18.64%;
     display: flex;
     align-items: center;
@@ -528,7 +529,7 @@ border: none;
 
 
 .testimonial {
-    height: 100vh;
+    // height: 100vh;
     background: url(../img/testimonial-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -536,6 +537,8 @@ border: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 205px;
 
 
     &__title {
@@ -622,6 +625,7 @@ border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+
     height: 30vh;
 
     &__flex-center-wraper {
