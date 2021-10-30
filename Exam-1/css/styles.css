@@ -1173,6 +1173,12 @@ template {
 @media (max-width: 1020px) {
   .how-it-works__decor-line {
     width: 20%;
+    height: 20px;
+  }
+}
+@media (max-width: 890px) {
+  .how-it-works__decor-line {
+    height: 9px;
   }
 }
 .how-it-works__decor-line::before {
@@ -1328,7 +1334,6 @@ template {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: white;
-  text-transform: uppercase;
   margin-bottom: 100px;
 }
 .testimonial__wrap-pic-and-text {
@@ -1348,7 +1353,6 @@ template {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 665px;
-  max-height: 284px;
   background-color: #3d3d3ddd;
   padding: 50px 50px;
 }

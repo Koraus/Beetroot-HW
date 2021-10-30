@@ -403,7 +403,13 @@ border: none;
 
         @include xl-1020 {
             width: 20%;
+             height: 20px;
            }
+
+           @include md-890 {
+            height: 9px;
+           }
+         
     }
 
 
@@ -550,7 +556,7 @@ border: none;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
         color: white;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         margin-bottom: 100px;
 
 
@@ -576,7 +582,6 @@ border: none;
     &__quote {
         box-sizing: border-box;
         max-width: 665px;
-        max-height: 284px;
         background-color: #3d3d3ddd;
         padding: 50px 50px;
     }
