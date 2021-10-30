@@ -917,9 +917,9 @@ template {
   min-height: 80px;
   padding: 0 18.64%;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1100px) {
   .header__nav {
-    padding: 0 10.64%;
+    padding: 0 10%;
   }
 }
 .header .header__logo-link {
@@ -988,6 +988,11 @@ template {
           justify-content: space-between;
   padding: 0 18.64%;
 }
+@media (max-width: 1100px) {
+  .why-choose-us {
+    padding: 0 10%;
+  }
+}
 .why-choose-us__text-part-wraper {
   max-width: 540px;
   max-height: 360px;
@@ -1006,8 +1011,15 @@ template {
   color: white;
   margin-bottom: 38px;
 }
+@media (max-width: 1350px) {
+  .why-choose-us__paragraph {
+    margin-right: 70px;
+  }
+}
 .why-choose-us__pic-part-wraper {
-  min-width: 476px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1019,17 +1031,15 @@ template {
 .why-choose-us__pic1 {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-bottom: 5px;
+  margin-right: 130px;
+  max-width: 100%;
 }
 .why-choose-us__pic2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
+  max-width: 100%;
 }
 
 .button-link {
@@ -1091,6 +1101,11 @@ template {
       align-self: flex-start;
   padding-bottom: 115px;
 }
+@media (max-width: 1020px) {
+  .how-it-works__decor-line {
+    width: 20%;
+  }
+}
 .how-it-works__decor-line::before {
   content: "";
   border-top: 1px dashed #868686;
@@ -1130,6 +1145,11 @@ template {
   line-height: 0.722;
   text-align: center;
 }
+@media (max-width: 1350px) {
+  .how-it-works__ico-text {
+    font-size: 26px;
+  }
+}
 .how-it-works__ico-pic {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1151,6 +1171,11 @@ template {
           align-items: center;
   padding-top: 230px;
   padding-bottom: 100px;
+}
+@media (max-width: 1100px) {
+  .chouschoice-for-booking1 {
+    padding: 0 10%;
+  }
 }
 
 .booking-window {
@@ -1203,6 +1228,11 @@ template {
   padding-top: 230px;
   padding-bottom: 100px;
 }
+@media (max-width: 1100px) {
+  .chouschoice-for-booking2 {
+    padding: 0 10%;
+  }
+}
 
 .testimonial {
   height: 100vh;
@@ -1252,6 +1282,19 @@ template {
   max-height: 284px;
   background-color: #3d3d3ddd;
   padding: 50px 50px;
+}
+.testimonial__pic {
+  background: url(../img/testimonial-quote.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  width: 488px;
+  height: 284px;
+}
+@media (max-width: 890px) {
+  .testimonial__pic {
+    background-position: right;
+  }
 }
 .testimonial__quote-text {
   font-size: 14px;

@@ -1,12 +1,19 @@
 $breakpoints: (
     "sm": 420px,
-    "md": 720px,
+    "md-890": 890px,
     "xl-1020": 1020px,
-    "defl": 1800px,
+    "nav-1100": 1100px,
+    "dec-1350": 1350px,
 );
 
-@mixin defl {
-    @media (max-width: map-get($breakpoints, "defl")) {
+@mixin dec-1350 {
+    @media (max-width: map-get($breakpoints, "dec-1350")) {
+        @content;
+    }
+}
+
+@mixin nav-1100 {
+    @media (max-width: map-get($breakpoints, "nav-1100")) {
         @content;
     }
 }
@@ -19,8 +26,8 @@ $breakpoints: (
 
 
 
-@mixin md {
-    @media (max-width: map-get($breakpoints, "md")) {
+@mixin md-890 {
+    @media (max-width: map-get($breakpoints, "md-890")) {
         @content;
     }
 }

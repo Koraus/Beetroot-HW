@@ -168,9 +168,12 @@
         min-height: 80px;
         padding: 0 18.64%;
         
-        @include xl-1020 {
-         padding: 0 10.64%;  
-        }
+     
+
+
+        @include nav-1100{
+            padding: 0 10%;
+         }
 
     }
 
@@ -240,6 +243,11 @@
     justify-content: space-between;
     padding: 0 18.64%;
 
+    @include nav-1100{
+        padding: 0 10%;
+
+     }
+
     &__text-part-wraper {
         max-width: 540px;
         max-height: 360px;
@@ -262,6 +270,10 @@
         font-weight: 400;
         color: white;
         margin-bottom: 38px;
+
+        @include dec-1350{
+            margin-right: 70px;
+        }
     }
 
     &__link {}
@@ -269,20 +281,22 @@
 
 
     &__pic-part-wraper {
-        min-width: 476px;
+        max-width: fit-content;
         display: flex;
         flex-direction: column;
     }
 
     &__pic1 {
         align-self: flex-start;
-        width: fit-content;
         margin-bottom: 5px;
+        margin-right: 130px ; 
+        max-width: 100%;
     }
 
     &__pic2 {
         align-self: flex-end;
-        width: fit-content;
+        width: auto;
+        max-width: 100%;
     }
 
 
@@ -334,6 +348,12 @@ border: none;
         height: 60px;
         align-self: flex-start;
         padding-bottom: 115px;
+
+        
+
+        @include xl-1020 {
+            width: 20%;
+           }
     }
 
 
@@ -370,6 +390,10 @@ border: none;
         color: white;
         line-height: 0.722;
         text-align: center;
+
+        @include dec-1350 {
+            font-size: 26px;
+        }
     }
 
     &__ico-pic {
@@ -388,6 +412,10 @@ border: none;
     align-items: center;
     padding-top: 230px;
     padding-bottom: 100px;
+    
+    @include nav-1100{  
+        padding: 0 10%;
+     }
 
     // justify-content: space-between;
 
@@ -429,6 +457,7 @@ border: none;
         color: white;
         line-height: 26px;
         margin-bottom: 48px;
+        
     }
 }
 
@@ -443,6 +472,10 @@ border: none;
     justify-content: flex-end;
     padding-top: 230px;
     padding-bottom: 100px;
+
+    @include nav-1100{
+        padding: 0 10%;
+     }
 }
 
 
@@ -494,8 +527,21 @@ border: none;
         background-color: #3d3d3ddd;
         padding: 50px 50px;
     }
+    
+    &__pic {
+        background: url(../img/testimonial-quote.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 488px;
+        height: 284px;
+        
+        @include md-890{
+            background-position: right; 
+        }
 
-    &__pic {}
+    }
+
 
     &__quote-text {
         font-size: 14px;
