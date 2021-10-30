@@ -951,6 +951,7 @@ template {
   color: white;
   text-align: left;
   text-decoration: none;
+  text-align: center;
 }
 .header .nav__item {
   position: relative;
@@ -987,6 +988,13 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 18.64%;
+}
+@media (max-width: 890px) {
+  .why-choose-us {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media (max-width: 1100px) {
   .why-choose-us {
@@ -1027,6 +1035,11 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 890px) {
+  .why-choose-us__pic-part-wraper {
+    display: none;
+  }
 }
 .why-choose-us__pic1 {
   -ms-flex-item-align: start;
@@ -1293,7 +1306,7 @@ template {
 }
 @media (max-width: 890px) {
   .testimonial__pic {
-    background-position: right;
+    display: none;
   }
 }
 .testimonial__quote-text {
