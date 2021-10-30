@@ -800,6 +800,11 @@ template {
   display: block;
   border: none;
 }
+@media (max-width: 890px) {
+  .header__search-form {
+    max-width: 650px;
+  }
+}
 .header__input-text {
   margin: 0;
   -webkit-box-sizing: border-box;

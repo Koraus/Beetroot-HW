@@ -75,6 +75,9 @@
         display: block;
         border: none;
 
+        @include md-890{
+         max-width: 650px; 
+         }
     }
 
     &__input-text {
