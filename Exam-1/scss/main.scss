@@ -65,6 +65,7 @@
 
 
     &__search-form {
+        position: relative;
         box-sizing: border-box;
         margin: 0 auto 120px auto;
         // margin: 0 32% 120px 32%;
@@ -74,11 +75,33 @@
         position: relative;
         display: block;
         border: none;
-
-        @include md-890{
-         max-width: 650px; 
+        @include md-890 {
+         width:80%; 
          }
+
     }
+    &__search-form::after {
+        content: 'Search';
+        position: absolute;
+        top: 25px;
+        left: 30%;
+        transform: translate(-50%, 0%);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 3px;
+        display: none;
+
+         @include form-580{  
+             display: inline;
+
+    }
+    }
+    &__search-form:focus + &__search-form::after{
+        display: none;
+    }
+
 
     &__input-text {
 
@@ -89,8 +112,12 @@
         border: none;
         padding-right: 150px;
         padding-left: 20px;
+       
+
 
     }
+
+
 
    
 
@@ -100,7 +127,14 @@
         text-align: center;
         font-size: 14px;
         letter-spacing: 3px;
+
+        @include form-580{ 
+            font-size: 0px;      
+        }
     }
+    
+
+ 
 
 
     &__search-button {
@@ -145,6 +179,7 @@
         left: 50%;
         transform: translate(-50%, 0%);
     }
+  
 
     &__search-button::after {
         position: absolute;

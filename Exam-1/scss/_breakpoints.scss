@@ -1,5 +1,6 @@
 $breakpoints: (
     "sm": 420px,
+    "form-580": 580px,
     "md-890": 890px,
     "xl-1020": 1020px,
     "nav-1100": 1100px,
@@ -31,9 +32,14 @@ $breakpoints: (
         @content;
     }
 }
-
 @mixin sm {
     @media (max-width: map-get($breakpoints, "sm")) {
+        @content;
+    }
+}
+
+@mixin form-580 {
+    @media (max-width: map-get($breakpoints, "form-580")) {
         @content;
     }
 }
