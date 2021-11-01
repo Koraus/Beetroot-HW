@@ -1,10 +1,15 @@
+/*
+Шрифты лучше подключать отдельны файлом.
+1) Скорость загрузки стилей и шрифта могут быть разными. И ето сильно ударит на загрузку
+2) Удобочитаемость. Когда все правильно разложенно, то искать в разы легче.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Josefin+Sans:wght@400;700&display=swap');
-@import '_breakpoints.scss';
+@import '_breakpoints.scss'; /* Дублирование подключения*/
 
 .body {
     margin: 0;
     padding: 0;
-    padding: 15px;
+    padding: 15px; /* дублирование стилей */
 }
 
 // .background-for-header {
@@ -25,7 +30,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-  
+
 
     &__central {
         width: 100%;
@@ -42,13 +47,13 @@
     &__title-bradn-name {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 700;
-        text-align: center;
+        text-align: center;  /* дублирование стилей */
         font-size: 48px;
         letter-spacing: 4.8px;
         color: white;
         text-transform: uppercase;
         text-align: center;
-        margin: 141px 0 10px 0; 
+        margin: 141px 0 10px 0;
     }
 
     &__title {
@@ -72,11 +77,11 @@
         // max-width: 650px; для адаптиву
         width: 650px;
         height: 61px;
-        position: relative;
+        position: relative;  /* дублирование стилей */
         display: block;
         border: none;
         @include md-890 {
-         width:80%; 
+         width:80%;
          }
 
     }
@@ -93,10 +98,9 @@
         letter-spacing: 3px;
         display: none;
 
-         @include form-580{  
+         @include form-580{
              display: inline;
-
-    }
+        }
     }
     &__search-form:focus + &__search-form::after{
         display: none;
@@ -112,14 +116,14 @@
         border: none;
         padding-right: 150px;
         padding-left: 20px;
-       
+
 
 
     }
 
 
 
-   
+
 
     &__input-text::placeholder {
         font-family: 'Josefin Sans', sans-serif;
@@ -128,13 +132,13 @@
         font-size: 14px;
         letter-spacing: 3px;
 
-        @include form-580{ 
-            font-size: 0px;      
+        @include form-580{
+            font-size: 0px;
         }
     }
-    
 
- 
+
+
 
 
     &__search-button {
@@ -169,7 +173,7 @@
         text-align: center;
         display: block;
         margin: 0 auto;
-  
+
     }
 
     &__scroll-down::after {
@@ -179,7 +183,7 @@
         left: 50%;
         transform: translate(-50%, 0%);
     }
-  
+
 
     &__search-button::after {
         position: absolute;
@@ -205,7 +209,7 @@
         align-self: flex-end;
         min-height: 80px;
         padding: 0 18.64%;
-        
+
         @include nav-1100{
             padding: 0 10%;
          }
@@ -217,7 +221,7 @@
         }
     }
 
-    
+
 
     .header__logo-link {
         font-family: 'Josefin Sans', sans-serif;
@@ -228,7 +232,7 @@
         color: white;
         text-transform: uppercase;
         text-decoration: none;
-        text-align: center;
+        text-align: center;  /* дублирование стилей */
     }
 
     .nav__links {
@@ -246,9 +250,9 @@
         font-weight: 400;
         font-size: 14px;
         color: white;
-        text-align: left;
+        text-align: left;  /* дублирование стилей */
         text-decoration: none;
-        text-align: center;
+        text-align: center; /* дублирование стилей */
 
     }
 
@@ -280,13 +284,14 @@
     background-position: center;
     background-size: cover;
     // height: 100vh;
- 
+
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 120px 18.64%;
     @include md-890{
+        /* Круто, ето уже уровень профи */
         justify-content: center;
      }
 
@@ -298,7 +303,7 @@
     &__text-part-wraper {
         max-width: 540px;
         max-height: 360px;
-      
+
 
     }
 
@@ -333,16 +338,16 @@
         display: flex;
         flex-direction: column;
         @include md-890{
-            display: none; 
+            display: none;
         }
     }
 
     &__pic1 {
         align-self: flex-start;
         margin-bottom: 5px;
-        margin-right: 130px ; 
+        margin-right: 130px ;
         max-width: 100%;
-        
+
     }
 
     &__pic2 {
@@ -399,7 +404,7 @@ border: none;
         align-self: flex-start;
         padding-bottom: 115px;
 
-        
+
 
         @include xl-1020 {
             width: 20%;
@@ -409,7 +414,7 @@ border: none;
            @include md-890 {
             height: 9px;
            }
-         
+
     }
 
 
@@ -469,8 +474,8 @@ border: none;
     align-items: center;
     padding-top: 230px;
     padding-bottom: 100px;
-    
-    @include nav-1100{  
+
+    @include nav-1100{
         padding: 0 10%;
      }
 
@@ -514,7 +519,7 @@ border: none;
         color: white;
         line-height: 26px;
         margin-bottom: 48px;
-        
+
     }
 }
 
@@ -585,7 +590,7 @@ border: none;
         background-color: #3d3d3ddd;
         padding: 50px 50px;
     }
-    
+
     &__pic {
         background: url(../img/testimonial-quote.jpg) no-repeat;
         background-size: cover;
@@ -593,9 +598,9 @@ border: none;
         display: block;
         width: 488px;
         height: 284px;
-        
+
         @include md-890{
-            display: none; 
+            display: none;
         }
 
     }
@@ -634,7 +639,7 @@ border: none;
     justify-content: center;
     align-items: center;
 
-    height: 30vh;
+    height: 30vh; /* высоту не стоит задавать размером, ее нужно набирать контентом или отступами у контента*/
 
     &__flex-center-wraper {
         display: flex;
@@ -659,7 +664,7 @@ border: none;
         color: white;
         margin-bottom: 30px;
         letter-spacing: 1.4px;
-     
+
     }
 
     &__social-networks {
@@ -673,13 +678,13 @@ border: none;
     }
 
     &__social-network-link-ico {}
-    
- 
+
+
 
     &__social-network-link-ico:hover {
         fill: #4860c8;
     }
- 
+
 }
 
 .for-test-size{
