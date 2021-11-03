@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'normalize';
+/*
+ Что ето :
+    _reset.scss — как и видно по названию файла, сбрасывает большинство стилей браузера, которые в нем заданы по
+     умолчанию (а такие действительно есть, просто откройте голый HTML).
+
+    _normalize.scss — этот файл не только задает стили по умолчанию там где это необходимо, но и исправляет некоторые
+     недостатки старых браузеров (привет IE).
+
+     @info https://github.com/necolas/normalize.css/blob/master/normalize.css
+     @info all = https://developer.mozilla.org/ru/docs/Web/CSS/all
+     @info unset = https://developer.mozilla.org/en-US/docs/Web/CSS/unset
+*/
+@import 'main';
