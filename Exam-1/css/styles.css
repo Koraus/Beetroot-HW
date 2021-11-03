@@ -730,10 +730,25 @@ template {
      @info all = https://developer.mozilla.org/ru/docs/Web/CSS/all
      @info unset = https://developer.mozilla.org/en-US/docs/Web/CSS/unset
 */
+/*
+Шрифты лучше подключать отдельны файлом.
+1) Скорость загрузки стилей и шрифта могут быть разными. И ето сильно ударит на загрузку
+2) Удобочитаемость. Когда все правильно разложенно, то искать в разы легче.
+*/
+/* К сожелению на проектах такая структура мне не попадалась =((
+ Поетому насколько ето удобно или вредно, немогу ничего сказать.
+ Ну я и сам не пользовался такой структурой и функционалом.
+ Так что как попользуешься оставь отзыв... В любом случае Круто!
+ Развечто совет по названиям для миксинов, сокращения можешь подсмотреть у бутстрапа
+ @info https://bootstrap-4.ru/docs/5.1/layout/grid/#grid-options
+ nav, dec, form - такие названия вводят в заблуждение. Названия от бутстрапа считаются уже стандартом
+*/
+/* Дублирование подключения*/
 .body {
   margin: 0;
   padding: 0;
   padding: 15px;
+  /* дублирование стилей */
 }
 
 .header {
@@ -775,6 +790,7 @@ template {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   text-align: center;
+  /* дублирование стилей */
   font-size: 48px;
   letter-spacing: 4.8px;
   color: white;
@@ -799,6 +815,7 @@ template {
   width: 650px;
   height: 61px;
   position: relative;
+  /* дублирование стилей */
   display: block;
   border: none;
 }
@@ -990,6 +1007,7 @@ template {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  /* дублирование стилей */
 }
 .header .nav__links {
   display: -webkit-box;
@@ -1008,8 +1026,10 @@ template {
   font-size: 14px;
   color: white;
   text-align: left;
+  /* дублирование стилей */
   text-decoration: none;
   text-align: center;
+  /* дублирование стилей */
 }
 .header .nav__item {
   position: relative;
@@ -1048,6 +1068,7 @@ template {
 }
 @media (max-width: 890px) {
   .why-choose-us {
+    /* Круто, ето уже уровень профи */
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1400,6 +1421,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   height: 30vh;
+  /* высоту не стоит задавать размером, ее нужно набирать контентом или отступами у контента*/
 }
 .footer__flex-center-wraper {
   display: -webkit-box;
@@ -1451,3 +1473,12 @@ template {
   height: 80px;
   color: red;
 }
+
+/* К сожелению на проектах такая структура мне не попадалась =((
+ Поетому насколько ето удобно или вредно, немогу ничего сказать.
+ Ну я и сам не пользовался такой структурой и функционалом.
+ Так что как попользуешься оставь отзыв... В любом случае Круто!
+ Развечто совет по названиям для миксинов, сокращения можешь подсмотреть у бутстрапа
+ @info https://bootstrap-4.ru/docs/5.1/layout/grid/#grid-options
+ nav, dec, form - такие названия вводят в заблуждение. Названия от бутстрапа считаются уже стандартом
+*/
