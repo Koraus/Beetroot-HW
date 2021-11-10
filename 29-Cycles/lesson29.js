@@ -9,11 +9,9 @@
   let a = 0;
 
   for (let i = firstNumber; i <= secondNumber; i++) {
-
     a = a + i;
     console.log("i=" + i + " a=" + a)
   }
-
   console.log('Сума чисел від ' + firstNumber + ' до ' + secondNumber + ' = ' + a);
 
 }
@@ -22,25 +20,45 @@
 // =========================NG Задача 2 початок ======================
 // 2 Запросить 2 числа и найти только наибольший общий делитель.
 {
-  // Большее число поделить на меньшее.
-  // Меньшее число поделить на остаток, который получается после деления. 
-  // Первый остаток поделить на второй остаток.
-  // Второй остаток поделить на третий и т. д.
-  // Деление продолжается до тех пор, пока в остатке не получится нуль. Последний делитель и есть наибольший общий делитель.
+  let firstNumber = (Number(prompt('Перше число')));
+  let secondNumber = (Number(prompt('Друге число')));
 
-//   let firstNumber = (Number(prompt('Перше число')));
-//   let secondNumber = (Number(prompt('Друге число')));
-//   let greatestCommonDivisor;
+    if (firstNumber > secondNumber) {
+    // Большее число поделить на меньшее.
+    let remainderOfDivisions = firstNumber % secondNumber;
+    // Меньшее число поделить на остаток, который получается после деления.
+    let RemainderOfDivisionsSmallNumber = secondNumber % remainderOfDivisions;
+    let startRemainderOfDivisions = RemainderOfDivisionsSmallNumber / 
+    for (let i = firstNumber; i <= secondNumber; i++) {
+      // Первый остаток поделить на второй остаток.
+      nextremainderOfDivisions / smallerRemainderOfDivisions
 
-//   console.log(firstNumber);
-//   console.log(secondNumber);
+      console.log("i=" + i + " a=" + a)
+    }
+    // Второй остаток поделить на третий и т. д.
+    // Деление продолжается до тех пор, пока в остатке не получится нуль. Последний делитель и есть наибольший общий делитель.
+    let a = 0;
 
 
-//   for (let i = 1; i <= firstNumber; i++) {
-//     if (firstNumber % i === 0 && secondNumber % i === 0)
-//       i = greatestCommonDivisor;
-//   }
-// }
+
+  }
+
+
+
+
+
+
+  //   let greatestCommonDivisor;
+
+  //   console.log(firstNumber);
+  //   console.log(secondNumber);
+
+
+  //   for (let i = 1; i <= firstNumber; i++) {
+  //     if (firstNumber % i === 0 && secondNumber % i === 0)
+  //       i = greatestCommonDivisor;
+  //   }
+}
 // ========================= Задача 2 кінець =======================
 
 // ========================= Задача 3 початок ======================
@@ -69,10 +87,10 @@
 // ========================= Задача 4 початок ======================
 // 4 Определить количество цифр в введенном числе. 
 {
-  // let userNumber = (Number(prompt('Введіть число')));
-  // let userNumberStr = String(userNumber);
-  // let a = userNumberStr.length;
-  // console.log('Кількість цифр в числі: ' + a)
+  let userNumber = (Number(prompt('Введіть число')));
+  let userNumberStr = String(userNumber);
+  let a = userNumberStr.length;
+  console.log('Кількість цифр в числі: ' + a)
 }
 // ========================= Задача 4 кінець =======================
 
@@ -80,35 +98,35 @@
 // ========================= Задача 5 початок ======================
 // 5 Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
 {
-  // let positiveNumbers = 0;
-  // let negativeNumbers = 0;
-  // let zeroNumbers = 0;
-  // let evenNumbers = 0;
-  // let oddNumbers = 0;
+  let positiveNumbers = 0;
+  let negativeNumbers = 0;
+  let zeroNumbers = 0;
+  let evenNumbers = 0;
+  let oddNumbers = 0;
 
-  // for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
 
-  //     let userNumbers = (Number(prompt('Введіть число')));
+    let userNumbers = (Number(prompt('Введіть число')));
 
-  //   if (userNumbers === 0) {
-  //     zeroNumbers = zeroNumbers + 1;
-  //   } else if (userNumbers > 0) {
-  //     positiveNumbers = positiveNumbers + 1;
-  //   } else if (userNumbers < 0) {
-  //     negativeNumbers = negativeNumbers + 1;
-  //   }
+    if (userNumbers === 0) {
+      zeroNumbers = zeroNumbers + 1;
+    } else if (userNumbers > 0) {
+      positiveNumbers = positiveNumbers + 1;
+    } else if (userNumbers < 0) {
+      negativeNumbers = negativeNumbers + 1;
+    }
 
-  //   if (userNumbers % 2 === 0) {
-  //     evenNumbers = evenNumbers + 1;
-  //   } else {
-  //     oddNumbers = oddNumbers + 1;
-  //   }
-  //   }
-  //   console.log('Кількість чисел більших за нуль: ' + positiveNumbers);
-  //   console.log('Кількість чисел менших за нуль: ' + negativeNumbers);
-  //   console.log('Кількість чисел рівних нулю: ' + zeroNumbers);
-  //   console.log('Кількість парних чисел: ' + evenNumbers);
-  //   console.log('Кількість не парних чисел: ' + oddNumbers);     
+    if (userNumbers % 2 === 0) {
+      evenNumbers = evenNumbers + 1;
+    } else {
+      oddNumbers = oddNumbers + 1;
+    }
+  }
+  console.log('Кількість чисел більших за нуль: ' + positiveNumbers);
+  console.log('Кількість чисел менших за нуль: ' + negativeNumbers);
+  console.log('Кількість чисел рівних нулю: ' + zeroNumbers);
+  console.log('Кількість парних чисел: ' + evenNumbers);
+  console.log('Кількість не парних чисел: ' + oddNumbers);
 }
 // ========================= Задача 5 кінець =======================
 
@@ -117,30 +135,30 @@
 // 6 Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется.
 {
 
-  // let result;
-  // let userResponse;
+  let result;
+  let userResponse;
 
-  // for (userResponse = 'Yes'; userResponse == 'Yes'; userResponse = prompt('Повторити операцію? "Yes" / "No"')) {
-  // let firstNumber = (Number(prompt('Введіть перше число')));
-  // let secondNumber = (Number(prompt('Введіть друге число')));
-  // let mathematicalAction = (prompt('Введіть математиную дію "-","+","/","*",'));
+  for (userResponse = 'Yes'; userResponse == 'Yes'; userResponse = prompt('Повторити операцію? "Yes" / "No"')) {
+    let firstNumber = (Number(prompt('Введіть перше число')));
+    let secondNumber = (Number(prompt('Введіть друге число')));
+    let mathematicalAction = (prompt('Введіть математиную дію "-","+","/","*",'));
 
-  //   switch (mathematicalAction) {
-  //     case '-':
-  //       result = firstNumber - secondNumber;
-  //       break;
-  //     case '+':
-  //       result = firstNumber + secondNumber;
-  //       break;
-  //     case '/':
-  //       result = firstNumber / secondNumber;
-  //       break;
-  //     case '*':
-  //       result = firstNumber * secondNumber;
-  //       break;
-  //   }
-  //    console.log("Результат обчислення: ", result);
-  // }
+    switch (mathematicalAction) {
+      case '-':
+        result = firstNumber - secondNumber;
+        break;
+      case '+':
+        result = firstNumber + secondNumber;
+        break;
+      case '/':
+        result = firstNumber / secondNumber;
+        break;
+      case '*':
+        result = firstNumber * secondNumber;
+        break;
+    }
+    console.log("Результат обчислення: ", result);
+  }
 }
 // ========================= Задача 6 кінець =======================
 

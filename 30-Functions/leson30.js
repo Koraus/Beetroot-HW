@@ -40,13 +40,13 @@
 
 // ======= Задача 3 =====
 // 3. Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149
-{/*Конкантинація в строку і переведння строки в число*/}
+{/*Конкантинація в строку і переведння строки в число*/ }
 //********** 3 кінць
 
 
 // ======= Задача 4 =====
 // 4. Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
-{}
+{ }
 //********** 4 кінць
 
 
@@ -90,9 +90,9 @@
 // ==== Задача 6
 // 6 .Написать функцию, которая принимает минимальное и максимальное значения для диапазона, и выводит только те числа из диапазона, которые являются совершенными. Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет. 
 {
-    
+
     function isPerfectNumber(n) {
-    
+
         let a = 0;
 
         for (let i = 1; i <= n; i++) {
@@ -102,7 +102,7 @@
             const result = remainder === 0;
 
             if (result) {
-//                     console.log(i);
+                //                     console.log(i);
                 a = a + i;
             }
         }
@@ -112,42 +112,52 @@
 
 
 
-function perfectNumberForRange (firstN, lastN){
-   
-  
-    for (let i = firstN; i <= lastN; i++) {
-      
-          if (isPerfectNumber(i) === true ){
-          console.log(i)
-          }  
-      
-    }
-}
+    function perfectNumberForRange(firstN, lastN) {
 
-perfectNumberForRange (1, 1000);
+
+        for (let i = firstN; i <= lastN; i++) {
+
+            if (isPerfectNumber(i) === true) {
+                console.log(i)
+            }
+
+        }
+    }
+
+    perfectNumberForRange(1, 1000);
 }
 //=== Задача 7
 // 7. Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
 {
-function userTime(hour, minute, second){
-   
-    if (minute === undefined){
-        minute = 00;
+    function userTime(hour, minute, second) {
+
+        if (minute === undefined) {
+            minute = 00;
+        }
+        if (second === undefined) {
+            second = 00;
+        }
+
+        a = hour.toString().padStart(2, 0);
+        b = minute.toString().padStart(2, 0);
+        c = second.toString().padStart(2, 0);
+
+        console.log(a + ':' + b + ':' + c)
+
     }
-    if (second === undefined){
-        second = 00;
-    }
-    
-    a = hour.toString().padStart(2,0);
-    b = minute.toString().padStart(2,0);
-    c = second.toString().padStart(2,0);
-    
-  console.log(a + ':' + b + ':'+ c)
-    
-  }
 }
 //=== Задача 8
 // 8. Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
+
 {
+    function userTimeInSecond(hour, minute, second) {
+
+        timeInSecond = (hour * 3600) + (minute * 60) + second;
+        return timeInSecond;
+
+    }
+
+
+
 
 }
