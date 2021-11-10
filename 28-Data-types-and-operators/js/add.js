@@ -137,7 +137,7 @@ function age() {
     //     if ( year400 === 0 ) {
     //         leapYear = 'Yes';
     //     } 
-    //     else if ( year100 == 0 ) {
+    //     else if ( year100 !== 0 ) {
     //         leapYear = 'No';
     //   }
 

@@ -15,7 +15,7 @@
     }
 
     function infoAboutCar (){
-        console.log(car.manufacturer, car.yearOfManufacture, car.averageSpeed)
+        console.log(car.manufacturer, car.model, car.yearOfManufacture, car.averageSpeed)
     }
 }
 
