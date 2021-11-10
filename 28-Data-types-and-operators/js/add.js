@@ -221,24 +221,24 @@ function age() {
 // ========================= Задача 7 початок  ========================
 // Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%.
 {
-    // let paymentAmount = (Number(prompt('Сума покупок')));
-    // let b;
+    let paymentAmount = (Number(prompt('Сума покупок')));
+    let b;
 
-    //   if (200 <= paymentAmount && paymentAmount <= 300){
-    //         b = 'Скидка 3%';
-    //   }
+      if (200 <= paymentAmount && paymentAmount <= 300){
+            b = 'Скидка 3%';
+      }
 
-    //   else if  (301 <= paymentAmount && paymentAmount <= 500) {
-    //         b = 'Скидка 5%';
-    //     }
-
-
-    //   else if ( 501 <= paymentAmount && paymentAmount <= Infinity){
-    //         b = 'Скидка 7%';
-    //   }
+      else if  (301 <= paymentAmount && paymentAmount <= 500) {
+            b = 'Скидка 5%';
+        }
 
 
-    // console.log(b);
+      else if ( 501 <= paymentAmount && paymentAmount <= Infinity){
+            b = 'Скидка 7%';
+      }
+
+
+    console.log(b);
 }
 // ========================= Задача 7 кінець  =========================
 
