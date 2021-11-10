@@ -236,8 +236,6 @@ function age() {
       else if ( 501 <= paymentAmount && paymentAmount <= Infinity){
             b = 'Скидка 7%';
       }
-
-
     console.log(b);
 }
 // ========================= Задача 7 кінець  =========================
@@ -371,9 +369,9 @@ function age() {
         let date = ' День: ' + days + ' Місяць: ' + month + ' Рік: ' +  year ;
         console.log(date);
 
-        let nextDays;
-        let nextmonth;
-        let nextyear;
+        let nextDays = days;
+        let nextmonth = month;
+        let nextyear = year;
 
         if (daysOfMonth > days) {
             nextDays = days + 1;
@@ -386,7 +384,7 @@ function age() {
         } else if (daysOfMonth == days && month == 12 ){
              nextDays = 1;
              nextmonth = 1;
-             nextyear = nextyear +1;
+             nextyear = year +1;
           }   
 
      

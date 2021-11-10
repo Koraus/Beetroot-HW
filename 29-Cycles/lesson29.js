@@ -6,7 +6,6 @@
   let firstNumber = (Number(prompt('Перше число')));
   let secondNumber = (Number(prompt('Друге число')));
 
-
   let a = 0;
 
   for (let i = firstNumber; i <= secondNumber; i++) {
@@ -24,24 +23,24 @@
 // 2 Запросить 2 числа и найти только наибольший общий делитель.
 {
   // Большее число поделить на меньшее.
-  // Меньшее число поделить на остаток, который получается после деления.
+  // Меньшее число поделить на остаток, который получается после деления. 
   // Первый остаток поделить на второй остаток.
   // Второй остаток поделить на третий и т. д.
   // Деление продолжается до тех пор, пока в остатке не получится нуль. Последний делитель и есть наибольший общий делитель.
 
-  let firstNumber = (Number(prompt('Перше число')));
-  let secondNumber = (Number(prompt('Друге число')));
-  let greatestCommonDivisor;
+//   let firstNumber = (Number(prompt('Перше число')));
+//   let secondNumber = (Number(prompt('Друге число')));
+//   let greatestCommonDivisor;
 
-  console.log(firstNumber);
-  console.log(secondNumber);
+//   console.log(firstNumber);
+//   console.log(secondNumber);
 
 
-  for (let i = 1; i <= firstNumber; i++) {
-    if (firstNumber % i === 0 && secondNumber % i === 0)
-      i = greatestCommonDivisor;
-  }
-}
+//   for (let i = 1; i <= firstNumber; i++) {
+//     if (firstNumber % i === 0 && secondNumber % i === 0)
+//       i = greatestCommonDivisor;
+//   }
+// }
 // ========================= Задача 2 кінець =======================
 
 // ========================= Задача 3 початок ======================
