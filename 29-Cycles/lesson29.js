@@ -17,30 +17,23 @@
 }
 // ========================= Задача 1 кінець =======================
 
-// =========================NG Задача 2 початок ======================
+// ========================= Задача 2 початок ======================
 // 2 Запросить 2 числа и найти только наибольший общий делитель.
 {
-
-
   const firstNumber = 462;
   const secondNumber = 2563;
   
   
   let remainder1 = firstNumber % secondNumber;
-  console.log(remainder1)
   let remainder2 = secondNumber % remainder1;
-  console.log(remainder2)
-  
   let remainder3 = remainder1 % remainder2; 
-  console.log(remainder3)
-  
   while (remainder3 !== 0){ 
     remainder1 = remainder2;
     remainder2 = remainder3;
     remainder3 = remainder1 % remainder2;
     console.log(remainder3); 
   }
-  console.log(remainder2); 
+  console.log('наибольший общий делитель = '+remainder2); 
   
 
 
