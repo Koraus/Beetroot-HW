@@ -13,20 +13,20 @@ function age() {
 // ========================= Задача 1 початок =======================
 // Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).
 {
-    // let a = 3;
+    let a = 3;
 
-    // if (0 <= a && a <= 2) {
-    //     b = 'ребенок';
-    // } else if (3 <= a && a < 12) {
-    //     b = 'не указано';
-    // } else if (12 <= a && a <= 18) {
-    //     b = 'подросток';
-    // } else if (18 < a && a <= 60) {
-    //     b = 'взрослый';
-    // } else if (60 < a && a <= Infinity) {
-    //     b = 'пенсионер';
-    // }
-    // console.log(b)
+    if (0 <= a && a <= 2) {
+        b = 'ребенок';
+    } else if (3 <= a && a < 12) {
+        b = 'не указано';
+    } else if (12 <= a && a <= 18) {
+        b = 'подросток';
+    } else if (18 < a && a <= 60) {
+        b = 'взрослый';
+    } else if (60 < a && a <= Infinity) {
+        b = 'пенсионер';
+    }
+    console.log(b)
 }
 // ========================= Задача 1 кінець ========================
 
@@ -34,53 +34,53 @@ function age() {
 // ========================= Задача 2 початок =======================
 // Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).
 {
-    // let a = 3;
-    // let b;
-    // let specialSymbols = {
-    //     1: '!',
-    //     2: '@',
-    //     3: '#',
-    //     4: '$',
-    //     5: '%',
-    //     6: '^',
-    //     7: '&',
-    //     8: '*',
-    //     9: '(',
-    //     0: ')',
-    // };
+    let a = 3;
+    let b;
+    let specialSymbols = {
+        1: '!',
+        2: '@',
+        3: '#',
+        4: '$',
+        5: '%',
+        6: '^',
+        7: '&',
+        8: '*',
+        9: '(',
+        0: ')',
+    };
 
-    // if (a == 1) {
-    //     b = specialSymbols['1'];
-    // }
+    if (a == 1) {
+        b = specialSymbols['1'];
+    }
 
-    // else if (a == 2) {
-    //     b = specialSymbols['2'];
-    // }
-    // else if (a == 3) {
-    //     b = specialSymbols['3'];
-    // }
-    // else if (a == 4) {
-    //     b = specialSymbols['4'];
-    // }
-    // else if (a == 5) {
-    //     b = specialSymbols['5'];
-    // }
-    // else if (a == 6) {
-    //     b = specialSymbols['6'];
-    // }
-    // else if (a == 7) {
-    //     b = specialSymbols['7'];
-    // }
-    // else if (a == 8) {
-    //     b = specialSymbols['8'];
-    // }
-    // else if (a == 9) {
-    //     b = specialSymbols['9'];
-    // }
-    // else if (a == 0) {
-    //     b = specialSymbols['0'];
-    // };
-    // console.log(b);
+    else if (a == 2) {
+        b = specialSymbols['2'];
+    }
+    else if (a == 3) {
+        b = specialSymbols['3'];
+    }
+    else if (a == 4) {
+        b = specialSymbols['4'];
+    }
+    else if (a == 5) {
+        b = specialSymbols['5'];
+    }
+    else if (a == 6) {
+        b = specialSymbols['6'];
+    }
+    else if (a == 7) {
+        b = specialSymbols['7'];
+    }
+    else if (a == 8) {
+        b = specialSymbols['8'];
+    }
+    else if (a == 9) {
+        b = specialSymbols['9'];
+    }
+    else if (a == 0) {
+        b = specialSymbols['0'];
+    };
+    console.log(b);
 }
 // ========================= Задача 2  кінець ========================
 
@@ -88,38 +88,38 @@ function age() {
 // ========================= Задача 3 початок  =======================
 // Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.
 {
-    //     let a = 110;
+        let a = 110;
 
-    //     let b;
-    //     let c;
+        let b;
+        let c;
 
-    //     b = String(a);
+        b = String(a);
 
-    //     let x = b[0];
-    //     let y = b[1];;
-    //     let z = b[2];;
+        let x = b[0];
+        let y = b[1];;
+        let z = b[2];;
 
-    //     console.log(b);
-    //     console.log(x);
-    //     console.log(y);
-    //     console.log(z);
+        console.log(b);
+        console.log(x);
+        console.log(y);
+        console.log(z);
 
-    //     if (x == y) {
-    //         c = 'Yes';
-    //     }
+        if (x == y) {
+            c = 'Yes';
+        }
 
-    //     else if (x == z) {
-    //         c = 'Yes';
-    //     }
-    //     else if (z == y) {
-    //         c = 'Yes';
-    //     }
+        else if (x == z) {
+            c = 'Yes';
+        }
+        else if (z == y) {
+            c = 'Yes';
+        }
 
-    //     else {
-    //         c = 'No';
-    //     }
+        else {
+            c = 'No';
+        }
 
-    //     console.log(c);
+        console.log(c);
 }
 // ========================= Задача 3  кінець ========================
 
@@ -127,27 +127,27 @@ function age() {
 // ========================= Задача 4 початок  =======================
 // Запросить у пользователя год и проверить, високосный он или нет. Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 {
-    //     let year  = 2028; 
+        let year  = 2028; 
 
-    //     let year400 = year%400;
-    //     let year100 = year%100;
-    //     let year4 = year%4;
-    //     let leapYear;
+        let year400 = year%400;
+        let year100 = year%100;
+        let year4 = year%4;
+        let leapYear;
 
-    //     if ( year400 === 0 ) {
-    //         leapYear = 'Yes';
-    //     } 
-    //     else if ( year100 !== 0 ) {
-    //         leapYear = 'No';
-    //   }
+        if ( year400 === 0 ) {
+            leapYear = 'Yes';
+        } 
+        else if ( year100 !== 0 ) {
+            leapYear = 'No';
+      }
 
-    //     else if ( year4 == 0 ) {
-    //           leapYear = 'Yes';
-    //     }
-    //     else {
-    //           leapYear = 'No';
-    //     }
-    //     console.log(leapYear);
+        else if ( year4 == 0 ) {
+              leapYear = 'Yes';
+        }
+        else {
+              leapYear = 'No';
+        }
+        console.log(leapYear);
 }
 // ========================= Задача 4 кінець  ========================
 
@@ -155,64 +155,64 @@ function age() {
 // ========================= Задача 5 початок  =======================
 // Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 {
-    // const a = prompt('Введіть 5-значне число');
-    // let b;
+    const a = prompt('Введіть 5-значне число');
+    let b;
 
-    // if (a[0] === a[4] && a[1] === a[3]) {
-    //     b = 'Паліндром';
-    // }
-    // else { b = 'Не паліндром'; }
-    // console.log(b);
+    if (a[0] === a[4] && a[1] === a[3]) {
+        b = 'Паліндром';
+    }
+    else { b = 'Не паліндром'; }
+    console.log(b);
 }
 // ========================= Задача 5 кінець  =======================
 
 // ========================= Задача 6 кінець  =======================
 // Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 {
-    // const USD = prompt('Сума в USD');
+    const USD = prompt('Сума в USD');
 
-    // const currency = prompt('EUR, UAN, AZN');
+    const currency = prompt('EUR, UAN, AZN');
 
-    // const EUR = 1.4;
-    // const UAN = 4.4;
-    // const AZN = 3.5;
-    // let b;
+    const EUR = 1.4;
+    const UAN = 4.4;
+    const AZN = 3.5;
+    let b;
 
-    // if (currency === 'EUR') {
-    //     b = Number(USD) * EUR;
-    // } else if (currency === 'UAN') {
-    //     b = Number(USD) * UAN;
-    // } else if (currency === 'AZN') {
-    //     b = Number(USD) * AZN;
-    // }
-    // console.log(b);
+    if (currency === 'EUR') {
+        b = Number(USD) * EUR;
+    } else if (currency === 'UAN') {
+        b = Number(USD) * UAN;
+    } else if (currency === 'AZN') {
+        b = Number(USD) * AZN;
+    }
+    console.log(b);
 }
 // ===== через свіч====
 {
-    //     const USD = prompt('Сума в USD');
-    //     const currency = prompt('EUR, UAN, AZN');
+        const USD = prompt('Сума в USD');
+        const currency = prompt('EUR, UAN, AZN');
 
-    //     const EUR = 1.4;
-    //     const UAN = 4.4;
-    //     const AZN = 3.5;
-    //     let b;
+        const EUR = 1.4;
+        const UAN = 4.4;
+        const AZN = 3.5;
+        let b;
 
-    //     switch (currency) {
+        switch (currency) {
 
-    //         case 'EUR':
+            case 'EUR':
 
-    //             b = Number(USD) * EUR;
-    //             break;
+                b = Number(USD) * EUR;
+                break;
 
-    //         case 'UAN':
-    //             b = Number(USD) * UAN;
-    //             break;
+            case 'UAN':
+                b = Number(USD) * UAN;
+                break;
 
-    //         case 'AZN':
-    //             b = Number(USD) * AZN;
-    //             break;
-    //     }
-    //     console.log(b);
+            case 'AZN':
+                b = Number(USD) * AZN;
+                break;
+        }
+        console.log(b);
 }
 // ========================= Задача 6 кінець  ========================
 
@@ -274,50 +274,50 @@ function age() {
 // ========================= Задача 9 початок  ========================
 // Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
 {
-    // {
-    //     let scoreСounter = 0;
+    
+        let scoreСounter = 0;
 
-    //     let question1;
-    //     question1 = prompt('Ялинки: 1.Зелені; 2.Рожеві; 3.Жовті;')
+        let question1;
+        question1 = prompt('Ялинки: 1.Зелені; 2.Рожеві; 3.Жовті;')
 
-    //     if (question1 == 1) {
-    //         scoreСounter = scoreСounter + 2;
-    //     }
-    //     else if (question1 == 2) {
-    //         scoreСounter = scoreСounter + 0;
-    //     }
-    //     else if (question1 == 3) {
-    //         scoreСounter = scoreСounter + 0;
-    //     }
+        if (question1 == 1) {
+            scoreСounter = scoreСounter + 2;
+        }
+        else if (question1 == 2) {
+            scoreСounter = scoreСounter + 0;
+        }
+        else if (question1 == 3) {
+            scoreСounter = scoreСounter + 0;
+        }
 
-    //     let question2;
-    //     question2 = prompt('Небо: 1.Черовне; 2.Зелене; 3.Блакитне')
+        let question2;
+        question2 = prompt('Небо: 1.Черовне; 2.Зелене; 3.Блакитне')
 
-    //     if (question2 == 1) {
-    //         scoreСounter = scoreСounter + 0;
-    //     }
-    //     else if (question2 == 2) {
-    //         scoreСounter = scoreСounter + 0;
-    //     }
-    //     else if (question2 == 3) {
-    //         scoreСounter = scoreСounter + 2;
-    //     }
+        if (question2 == 1) {
+            scoreСounter = scoreСounter + 0;
+        }
+        else if (question2 == 2) {
+            scoreСounter = scoreСounter + 0;
+        }
+        else if (question2 == 3) {
+            scoreСounter = scoreСounter + 2;
+        }
 
-    //     let question3;
-    //     question3 = prompt('Прискорення вільного падіння,  м/с2 : 1."9,8"; 2."15"; 3. "9800"')
+        let question3;
+        question3 = prompt('Прискорення вільного падіння,  м/с2 : 1."9,8"; 2."15"; 3. "9800"')
 
-    //     if (question3 == 1) {
-    //         scoreСounter = scoreСounter + 2;
-    //     }
-    //     else if (question3 == 2) {
-    //         scoreСounter = scoreСounter + 0;
-    //     }
-    //     else if (question3 == 3) {
-    //         scoreСounter = scoreСounter + 0;
-    //     }
+        if (question3 == 1) {
+            scoreСounter = scoreСounter + 2;
+        }
+        else if (question3 == 2) {
+            scoreСounter = scoreСounter + 0;
+        }
+        else if (question3 == 3) {
+            scoreСounter = scoreСounter + 0;
+        }
 
-    //     console.log(scoreСounter);
-    // }
+        console.log(scoreСounter);
+    
 }
 // ========================= Задача 9 кінець  =========================
 
