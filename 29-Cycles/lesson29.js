@@ -20,44 +20,32 @@
 // =========================NG Задача 2 початок ======================
 // 2 Запросить 2 числа и найти только наибольший общий делитель.
 {
-  let firstNumber = (Number(prompt('Перше число')));
-  let secondNumber = (Number(prompt('Друге число')));
-
-    if (firstNumber > secondNumber) {
-    // Большее число поделить на меньшее.
-    let remainderOfDivisions = firstNumber % secondNumber;
-    // Меньшее число поделить на остаток, который получается после деления.
-    let RemainderOfDivisionsSmallNumber = secondNumber % remainderOfDivisions;
-    let startRemainderOfDivisions = RemainderOfDivisionsSmallNumber / 
-    for (let i = firstNumber; i <= secondNumber; i++) {
-      // Первый остаток поделить на второй остаток.
-      nextremainderOfDivisions / smallerRemainderOfDivisions
-
-      console.log("i=" + i + " a=" + a)
-    }
-    // Второй остаток поделить на третий и т. д.
-    // Деление продолжается до тех пор, пока в остатке не получится нуль. Последний делитель и есть наибольший общий делитель.
-    let a = 0;
 
 
-
+  const firstNumber = 462;
+  const secondNumber = 2563;
+  
+  
+  let remainder1 = firstNumber % secondNumber;
+  console.log(remainder1)
+  let remainder2 = secondNumber % remainder1;
+  console.log(remainder2)
+  
+  let remainder3 = remainder1 % remainder2; 
+  console.log(remainder3)
+  
+  while (remainder3 !== 0){ 
+    remainder1 = remainder2;
+    remainder2 = remainder3;
+    remainder3 = remainder1 % remainder2;
+    console.log(remainder3); 
   }
+  console.log(remainder2); 
+  
 
 
 
 
-
-
-  //   let greatestCommonDivisor;
-
-  //   console.log(firstNumber);
-  //   console.log(secondNumber);
-
-
-  //   for (let i = 1; i <= firstNumber; i++) {
-  //     if (firstNumber % i === 0 && secondNumber % i === 0)
-  //       i = greatestCommonDivisor;
-  //   }
 }
 // ========================= Задача 2 кінець =======================
 
@@ -243,4 +231,5 @@ for (; userAnswer === 'Yes'; userAnswer = prompt()) {
 
 
 // =========================
+
 
