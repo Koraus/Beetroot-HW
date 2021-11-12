@@ -20,18 +20,21 @@
 // ========================= Задача 2 початок ======================
 // 2 Запросить 2 числа и найти только наибольший общий делитель.
 {
-  const firstNumber = 462;
-  const secondNumber = 2563;
+  function calculate(f) {
+    const  a = f.numerator / f.denominator;
+    return a;
+  };
   
-  
-  let remainder1 = firstNumber % secondNumber;
-  let remainder2 = secondNumber % remainder1;
-  let remainder3 = remainder1 % remainder2; 
-  while (remainder3 !== 0){ 
-    remainder1 = remainder2;
-    remainder2 = remainder3;
-    remainder3 = remainder1 % remainder2;
-    console.log(remainder3); 
+  function nod(firstNumber, secondNumber) {
+    let remainder1 = firstNumber;
+    let remainder2 = secondNumber;
+    let remainder3 = remainder1 % remainder2;
+    while (remainder3 !== 0) {
+      remainder1 = remainder2; 
+      remainder2 = remainder3; 
+      remainder3 = remainder1 % remainder2;
+    } 
+    return remainder2; 
   }
   console.log('наибольший общий делитель = '+remainder2); 
   
