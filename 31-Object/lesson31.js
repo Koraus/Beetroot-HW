@@ -1,34 +1,10 @@
 
 // 31 -- Об’єкти
 
-
 // 1. Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), и следующие функции для работы с этим объектом:
 // Функция для вывода на экран информации об автомобиле;
 // Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через 4 часа дороги водителю необходимо делать перерыв на 1 час.
 
-{
-    //  v1
-    //     let car = {
-    //         manufacturer: 'Volvo',
-    //         model: 'ХС90',
-    //         yearOfManufacture: 2018,
-    //         averageSpeed: 110,
-    //     }
-
-    //     function infoAboutCar (){
-    //         console.log(car.manufacturer, car.model, car.yearOfManufacture, car.averageSpeed)
-    //     }
-
-    //     function timeForTravel (distance, averageSpeed){
-
-    //             let  time = distance / averageSpeed;
-    //             let  timeToStop = time / 4 ;
-    //             let  fullTime =  Math.floor(timeToStop) + time;
-    //             return fullTime;
-    //     }
-
-    //   console.log(timeForTravel(550, car.averageSpeed));
-}
 {
     function infoAboutCar(car) {
         console.log(car.manufacturer, car.model, car.yearOfManufacture, car.averageSpeed);
@@ -151,10 +127,7 @@
                 denominator: f1.denominator * f2.numerator,
               })
         }; 
-            
-            
-        
-          
+    
 {
         const f1 = {
             numerator: 1,
