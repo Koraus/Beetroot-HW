@@ -39,94 +39,105 @@
 }
 
 
-    // 2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
-    // Функция сложения 2-х объектов-дробей;
-    // Функция вычитания 2-х объектов-дробей;
-    // Функция умножения 2-х объектов-дробей;
-    // Функция деления 2-х объектов-дробей;
-    // Функция сокращения объекта-дроби.
+// 2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
+// Функция сложения 2-х объектов-дробей;
+// Функция вычитания 2-х объектов-дробей;
+// Функция умножения 2-х объектов-дробей;
+// Функция деления 2-х объектов-дробей;
+// Функция сокращения объекта-дроби.
 
-    {
+{
 
-        function calculate(f) {
-            const a = f.numerator / f.denominator;
-            return a;
-        };
-
-        function nod(firstNumber, secondNumber) {
-            let remainder1 = firstNumber;
-            let remainder2 = secondNumber;
-            let remainder3 = remainder1 % remainder2;
-            while (remainder3 !== 0) {
-                remainder1 = remainder2;
-                remainder2 = remainder3;
-                remainder3 = remainder1 % remainder2;
-            }
-            return remainder2;
+    function calculate(f) {
+        const a = f.numerator / f.denominator;
+        return a;
+      };
+      
+      function nod(firstNumber, secondNumber) {
+        let remainder1 = firstNumber;
+        let remainder2 = secondNumber;
+        let remainder3 = remainder1 % remainder2;
+        while (remainder3 !== 0) {
+          remainder1 = remainder2;
+          remainder2 = remainder3;
+          remainder3 = remainder1 % remainder2;
         }
-
-
-        function normalize(f) {
-            const a = nod(f.numerator, f.denominator);
-            const b = f.numerator / a;
-            const c = f.denominator / a;
-            const fNorm = {
-                numerator: b,
-                denominator: c,
-            };
-            return fNorm;
+        return remainder2;
+      }
+      
+      
+      function normalize(f) {
+        const a = nod(f.numerator, f.denominator);
+        const b = f.numerator / a;
+        const c = f.denominator / a;
+        const fNorm = {
+          numerator: b,
+          denominator: c,
         };
-
-        function add(f1, f2) {
-            return normalize({
-                numerator: (f1.denominator * f2.numerator) + (f2.denominator * f1.numerator),
-                denominator: f1.denominator * f2.denominator,
-            })
+        return fNorm;
+      };
+      
+      function add(f1, f2) {
+        return normalize({
+          numerator: (f1.denominator * f2.numerator) + (f2.denominator * f1.numerator),
+          denominator: f1.denominator * f2.denominator,
+        })
+      };
+      
+      function subtract(f1, f2) {
+        return normalize({
+          numerator: (f1.denominator * f2.numerator) - (f2.denominator * f1.numerator),
+          denominator: f1.denominator * f2.denominator,
+        })
+      };
+      
+      function multiply(f1, f2) {
+        return normalize({
+          numerator: f1.numerator * f2.numerator,
+          denominator: f1.denominator * f2.denominator,
+        })
+      };
+      
+      
+      
+      
+      function divide(f1, f2) {
+          return fractionalDivide = normalize({
+          numerator: f1.numerator * f2.denominator,
+          denominator: f1.denominator * f2.numerator,
+          })
+      };
+      
+      
+      {
+        const f1 = {
+          numerator: 1,
+          denominator: 6,
         };
-
-        function subtract(f1, f2) {
-            return normalize({
-                numerator: (f1.denominator * f2.numerator) - (f2.denominator * f1.numerator),
-                denominator: f1.denominator * f2.denominator,
-            })
+        const f2 = {
+          numerator: 8,
+          denominator: 12,
         };
-
-        function multiply(f1, f2) {
-            return normalize({
-                numerator: f1.numerator * f2.numerator,
-                denominator: f1.denominator * f2.denominator,
-            })
-        };
-
-        function divide(f1, f2) {
-            return normalize({
-                numerator: f1.numerator * f2.denominator,
-                denominator: f1.denominator * f2.numerator,
-            })
-        };
-
-        {
-            const f1 = {
-                numerator: 1,
-                denominator: 6,
-            };
-            const f2 = {
-                numerator: 8,
-                denominator: 12,
-            };
-
-            console.log('Функция сложения 2-х объектов-дробей;  add Разультат: ' + add(f1, f2));
-
-            console.log('Функция вычитания 2-х объектов-дробей;  subtract Разультат: ' + subtract(f1, f2));
-
-            console.log('Функция умножения 2-х объектов-дробей;  multiply Разультат: ' + multiply(f1, f2));
-
-            console.log('Функция деления 2-х объектов-дробей; divide Разультат: ' + divide(f1, f2));
-
-            console.log('Функция сокращения объекта-дроби; normalize Разультат: ' + normalize(f1, f2));
-
+        
+        
+        
+        function numeratorOutput(getStr) {
+              let a = String(getStr.numerator);
+              return a ;  
         }
-    }
+                      
+        function denominatorOutput(getStr) {
+              let a = String(getStr.denominator);
+              return a  ;  
+        }
+        
+      console.log('Функция сложения 2-х объектов-дробей;  add Разультат: ' + numeratorOutput(add(f1, f2))  +  ' / ' + denominatorOutput(add(f1, f2)) );
+      console.log('Функция вычитания 2-х объектов-дробей;  subtract Разультат: ' + numeratorOutput(subtract(f1, f2))  +  ' / ' + denominatorOutput(subtract(f1, f2)) );
+      console.log('Функция вычитания 2-х объектов-дробей;  multiply Разультат: ' + numeratorOutput(multiply(f1, f2))  +  ' / ' + denominatorOutput(multiply(f1, f2)) );
+      console.log('Функция вычитания 2-х объектов-дробей;  divide Разультат: ' + numeratorOutput(divide(f1, f2))  +  ' / ' + denominatorOutput(divide(f1, f2)) );  
+      console.log('Функция вычитания 2-х объектов-дробей;  normalize Разультат: ' + numeratorOutput(normalize(f2))  +  ' / ' + denominatorOutput(normalize(f2)) );  
+      }
+}
 
 // 3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
 // Функция вывода времени на экран; 
@@ -135,7 +146,7 @@
 // Функция изменения времени на переданное количество часов. 
 // Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
         // Функция вывода времени на экран;
-        {
+ {
             // Функция вывода времени на экран; 
             function userTime(time) {
                 if (time.minute === undefined) {
@@ -203,4 +214,4 @@
             console.log('Збільшимо початковий час на ' + upSec + ' sec. отримаємо ' + userUpSeconds(upSec));
             console.log('Збільшимо початковий час на ' + upMin + ' min. отримаємо ' + userUpMinutes(upMin));
             console.log('Збільшимо початковий час на ' + upHr + ' hr. отримаємо ' + userUpHours(upHr));
-        }
+ }
