@@ -46,3 +46,27 @@ function rectangleAreaCalculator(length, width){
   };
   
   console.log(rectangleAreaCalculator(2) , typeof(rectangleAreaCalculator(2)) );
+
+
+
+
+
+{
+    let a;
+    let b;
+    let n = (b - a) / 2 ;
+    n = 50;
+   
+    let answer = prompt('`Ваше число більше за ${n}, менше  за ${n}, рівне ${n}`');
+  
+    if (answer == 'рівне'){
+      alert('`${n} - Ваше число рівне`');
+    } else if ( answer == 'більше'){
+      alert('`${n} - Ваше більше`')
+    } else if ( answer == 'менше'){
+      alert('`${n} - Ваше менше`')
+    }
+  
+  
+
+}

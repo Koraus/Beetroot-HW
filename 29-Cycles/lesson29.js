@@ -37,10 +37,6 @@
   }
   console.log('наибольший общий делитель = '+remainder2); 
   
-
-
-
-
 }
 // ************* кінець 
 
@@ -205,36 +201,34 @@
 
 // ========================= Задача 10 початок =====================
 // 10 Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, < N или == N?». В зависимости от того, что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100, поделили пополам и получили 50. Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N.
-{ }
+{ 
+  let startN = 0;
+  let endN = 100;
+  alert('Загадать число от ' + startN + ' до ' + endN );
+  let numberN = (endN - startN) / 2;
+  let userAnswer;
+  
+  for (  userAnswer  ; userAnswer == 'more' || 'less'; userAnswer= prompt('Your number  more then ' + numberN + '?' + '; Your number  less then ' + numberN + '?' + '; Your number is ' + numberN +  '?' )  ) {
+
+      if (userAnswer == 'more'){
+        
+        startN = numberN + 1;
+        endN = endN;
+        numberN = Math.ceil( startN + ((endN - startN) / 2));
+
+      } else if (userAnswer == 'less') {
+        
+        startN = endN ;
+        endN = numberN - 1;
+        numberN = Math.ceil( endN - ((startN - endN) / 2) );
+
+      } else if (userAnswer == 'is') {
+        alert('Your number is ' + numberN );
+        break
+      }
+
+  }
+
+}
 // ************* кінець 
-
-// 10 Игра «Угадай число». temp 
-
-// Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: 
-// каждую итерацию цикла делите диапазон чисел пополам, 
-   
-
-   
   
-  alert('Загадать число от 0 до 100');
-
-  let minN  = 0;
-  let maxN = 100;
-  let numberOfValues = maxN; 
-  console.log('if Yes - numberOfValues start: ' + numberOfValues);   
-  let  a = 'Yes';
-
-  let t = 0;
-
-  for (  let i = 0 ; a = 'Yes'; i= prompt(`Ваше чило більше? ${numberOfValues} Yes/No/ItsMyNumber`)   ) {
-
-      numberOfValues = Math.floor((numberOfValues / 2));
-      minN =  maxN - numberOfValues + 1;
-      maxN =  maxN;
-  
-      console.log('if Yes - numberOfValues: ' + numberOfValues);     
-      console.log('if Yes - minN: ' + minN);
-      console.log('if Yes - maxN: ' + maxN);
-      console.log('if Yes - numberOfValues after: ' + numberOfValues);  
-    
-  };

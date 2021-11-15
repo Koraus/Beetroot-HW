@@ -36,12 +36,12 @@
         amount: 1,
         isPurchased: false,
     }, {
-        product: 'Pepperlt',
-        amount: 1,
+        product: 'Onion',
+        amount: 4,
         isPurchased: false,
     }
 
-
+    
 
     ];
 
