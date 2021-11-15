@@ -243,32 +243,3 @@
       console.log('if Yes - numberOfValues after: ' + numberOfValues);  
     
   };
-
-
-
-
-
-
-
-
-
-
-  let a = 'Понедіок';
-let b = 'Вівторок';
-let c = 'Середа';
-let d = 'Четвер';
-let e = "П'ятниця";
-let f = 'Субота';
-let g = 'Неділя';
-
-{
-let isYes = confirm(`Поточний день ${b}, хочете продовжити?`);
-
-for (isYes = true ; isYes == true ; isYes = confirm(`Поточний день ${b}, хочете продовжити?`) ){
-
-  console.log('Працюэ');
-  
-};
-
-
-}
