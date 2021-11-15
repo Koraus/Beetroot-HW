@@ -249,6 +249,7 @@ function age() {
     const circleLength = Number(circleLengthInput);
 
     const diameterOfTheCircle = circleLength / Math.PI;
+ 
 
     const perimeterOfTheSquareInput = prompt('периметр квадрата');
     const perimeterOfTheSquare = Number(perimeterOfTheSquareInput);
