@@ -63,13 +63,10 @@
     function rectangleAreaCalculator(length, width){
   
         let  rectanglAarea =  length * width;
-        
         if (width == undefined) {
          rectanglAarea = length * length;
         };
-        
         return rectanglAarea;
-       
       };
       
       console.log( 'Площадь : ' + rectangleAreaCalculator( 4)  );
@@ -91,7 +88,6 @@
             const result = remainder === 0;
 
             if (result) {
-                console.log(i);
                 a = a + i;
             }
         }
@@ -119,13 +115,9 @@
         let a = 0;
 
         for (let i = 1; i <= n; i++) {
-
             const remainder = n % i;
-
             const result = remainder === 0;
-
             if (result) {
-                //                     console.log(i);
                 a = a + i;
             }
         }
@@ -147,7 +139,6 @@
 // 7. Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
 {
     function userTime(hour, minute, second) {
-
         if (minute === undefined) {
             minute = 00;
         }
@@ -207,10 +198,10 @@ function userTimeReturnFromSecond(timeInSecond) {
     function CalculatingDateDifference (firstHour, firstMinute, firstSecond, secondHour, secondMinute, secondSecond ) {
 
     let firstDateInSecond = userTimeInSecond(firstHour, firstMinute, firstSecond );
-//       console.log('firstDateInSecond ' + firstDateInSecond);
+
   
     let secondDateInSecond = userTimeInSecond(secondHour, secondMinute, secondSecond );
-//         console.log('secondDateInSecond ' + secondDateInSecond);
+
     let differenceDateInSecond = secondDateInSecond - firstDateInSecond;
   
     return userTimeReturnFromSecond(differenceDateInSecond);
