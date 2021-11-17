@@ -70,3 +70,17 @@ function rectangleAreaCalculator(length, width){
   
 
 }
+
+
+
+
+
+const f1 = function (a, b, c) {
+return a + b + c;
+}
+
+const f2 = (a, b, c) => {
+return a + b + c;
+}
+
+const f3 = (a, b, c) => a + b + c;
