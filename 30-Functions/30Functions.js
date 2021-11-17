@@ -140,10 +140,10 @@
 {
     function userTime(hour, minute, second) {
         if (minute === undefined) {
-            minute = 00;
+            minute = 0;
         }
         if (second === undefined) {
-            second = 00;
+            second = 0;
         }
         a = hour.toString().padStart(2, 0);
         b = minute.toString().padStart(2, 0);
