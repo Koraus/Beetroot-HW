@@ -191,19 +191,71 @@ function averageCost(a) {
 
 let auditorium = [
 {  
-    "name of seats" : 'Physical',
-    "number of seats" : 15,
-    "names of faculties" : 'VPI',
+    'name of seats' : 'Physical',
+    'number of seats' : 15,
+    'names of faculties' : 'VPI',
 
 },{
-    "name of seats" : 'Chemically',
-    "number of seats" : 20,
-    "names of faculties" : 'XTF',
+    'name of seats' : 'Chemically',
+    'number of seats' : 20,
+    'names of faculties' : 'XTF',
 }, {
-    "name of seats" : 'Practical',
-    "number of seats" : 17,
-    "names of faculties" : 'MMI',
+    'name of seats' : 'Practical',
+    'number of seats' : 17,
+    'names of faculties' : 'MMI',
 },
 ];
 
 
+let group =  [
+    {
+        'Group name' : 'CT-11',
+        'Number of students' : 12,
+        'Names of faculties' : 'VPI',
+    }, {
+        'Group name' : 'MT-11',
+        'Number of students' : 18,
+        'Names of faculties' : 'XTF',
+    },{
+        'Group name' : 'CM-21',
+        'Number of students' : 6,
+        'Names of faculties' : 'MMI',
+    }
+]
+
+
+
+// Вывод на экран всех аудиторий;
+function printAuditorium (){};
+function printAuditorium(a) {
+    let printsList = a.map(a =>
+       '\n' + ' Назва аудиторії :' + a['name of seats'] + '\n' +
+       '\n' + ' Кількість студентів які може вміситити аудиторія :'  +   a['number of seats'] + '\n'  +
+       '\n' + ' Назва факультету :' +  a['names of faculties'] + '\n');
+    return printsList;
+
+};
+
+{ console.log(printAuditorium(auditorium)); }
+
+
+
+// Вывод на экран аудиторий для указанного факультета;
+function printAuditoriumOfFaculties(a, strName) {
+
+    let printsList = a.filter(a =>  a['names of faculties'] == strName )
+       return printsList;
+};
+
+{console.log(printAuditoriumOfFaculties(auditorium, 'XTF') )}
+
+// Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
+function printIsAuditoriumForGroup (){};
+
+
+// Функция сортировки аудиторий по количеству мест;
+function sortingByNumberOfSeats (){};
+
+
+// Функция сортировки аудиторий по названию (по алфавиту).
+function sortingByName  (){};
