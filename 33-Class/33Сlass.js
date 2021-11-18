@@ -24,10 +24,14 @@ class Circle {
     calculateArea (){
         return  Math.PI * (this._radius ** 2)
     };
+    calculateLength (){
+        return  Math.PI * 2 * this._radius
+    };
 
 }
 const circle1 = new Circle(4);
 console.log(circle1);
 console.log(circle1.radius);
 console.log(circle1.diameter);
-console.log( circle1.calculateArea()  )
+console.log( circle1.calculateArea() )
+console.log( circle1.calculateLength() )
