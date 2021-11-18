@@ -207,21 +207,24 @@ let auditorium = [
 ];
 
 
-let group =  [
-    {
+let groupCT11 = {
+    
         'Group name' : 'CT-11',
         'Number of students' : 12,
         'Names of faculties' : 'VPI',
-    }, {
-        'Group name' : 'MT-11',
-        'Number of students' : 18,
-        'Names of faculties' : 'XTF',
-    },{
-        'Group name' : 'CM-21',
-        'Number of students' : 6,
-        'Names of faculties' : 'MMI',
-    }
-]
+    };
+
+
+//     , {
+//         'Group name' : 'MT-11',
+//         'Number of students' : 18,
+//         'Names of faculties' : 'XTF',
+//     },{
+//         'Group name' : 'CM-21',
+//         'Number of students' : 6,
+//         'Names of faculties' : 'MMI',
+//     }
+
 
 
 
@@ -250,7 +253,12 @@ function printAuditoriumOfFaculties(a, strName) {
 {console.log(printAuditoriumOfFaculties(auditorium, 'XTF') )}
 
 // Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;
-function printIsAuditoriumForGroup (){};
+function printIsAuditoriumForGroup (auditoriums, group){
+    let printsList = auditoriums.filter(auditorium =>  auditorium[ 'number of seats'] > group['Number of students'] )
+    return printsList;
+};
+let as = printIsAuditoriumForGroup(auditorium, groupCT11 );
+console.log(as)
 
 
 // Функция сортировки аудиторий по количеству мест;

@@ -245,6 +245,7 @@ function age() {
 // Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
 
 {
+    
     const circleLengthInput = prompt('длина окружности');
     const circleLength = Number(circleLengthInput);
 
@@ -290,7 +291,7 @@ function age() {
 
         let question2;
         question2 = prompt('Небо: 1.Черовне; 2.Зелене; 3.Блакитне')
-
+12
         if (question2 == 1) {
             scoreСounter = scoreСounter + 0;
         }
@@ -324,7 +325,7 @@ function age() {
 // Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
 
 {
-   let days = (Number(prompt('Введіть дні')));
+    let days = (Number(prompt('Введіть дні')));
     let month = (Number(prompt('Введіть місяць')));
     let year = (Number(prompt('Введіть рік')));
     
