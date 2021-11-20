@@ -28,25 +28,24 @@ function age() {
 
 
 
-/* ========================= Задача 1 початок ======================= *
+
 // Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).
 {
-    let a = 3;
+    // let a = 3;
 
-    if (0 <= a && a <= 2) {
-        b = 'ребенок';
-    } else if (3 <= a && a < 12) {
-        b = 'не указано';
-    } else if (12 <= a && a <= 18) {
-        b = 'подросток';
-    } else if (18 < a && a <= 60) {
-        b = 'взрослый';
-    } else if (60 < a && a <= Infinity) {
-        b = 'пенсионер';
-    }
-    console.log(b);  // переменная не была обьявленна.
-}
-/* ========================= Задача 1 кінець  */
+    // if (0 <= a && a <= 2) {
+    //     b = 'ребенок';
+    // } else if (3 <= a && a < 12) {
+    //     b = 'не указано';
+    // } else if (12 <= a && a <= 18) {
+    //     b = 'подросток';
+    // } else if (18 < a && a <= 60) {
+    //     b = 'взрослый';
+    // } else if (60 < a && a <= Infinity) {
+    //     b = 'пенсионер';
+    // }
+    // console.log(b);
+
 
 
 
@@ -159,7 +158,7 @@ function age() {
 {
     // Перечитай условие задачи.
     // 1но из условий небыло выполненно
-        let year  = 2028; 
+        let year  = 2028;
 
         let year400 = year%400;
         let year100 = year%100;
@@ -169,7 +168,7 @@ function age() {
         // обьеденить все в 1но условие.(Да ето реально)
         if ( year400 === 0 ) { // кратен 400,
             leapYear = 'Yes';
-        } 
+        }
         else if ( year100 !== 0 ) { // не кратен 100.
             leapYear = 'No';
       } // выравнивание
@@ -289,12 +288,12 @@ function age() {
 // Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
 
 {
-    
+
     const circleLengthInput = prompt('длина окружности');
     const circleLength = Number(circleLengthInput);
 
     const diameterOfTheCircle = circleLength / Math.PI;
- 
+
 
     const perimeterOfTheSquareInput = prompt('периметр квадрата');
     const perimeterOfTheSquare = Number(perimeterOfTheSquareInput);
@@ -320,7 +319,7 @@ function age() {
 // За каждый правильный ответ начисляется 2 балла.
 // После вопросов выведите пользователю количество набранных баллов.
 {
-    
+
         let scoreСounter = 0; // В названии присудствует буква из другой языковой раскладки.
         let question1; // присвоение и создание мона делать сразу
         question1 = prompt('Ялинки: 1.Зелені; 2.Рожеві; 3.Жовті;') // ; - пропустил
@@ -362,7 +361,7 @@ function age() {
         }
 
         console.log(scoreСounter);
-    
+
 }
 /* ========================= Задача 9 кінець  */
 
@@ -375,8 +374,8 @@ function age() {
     let days = (Number(prompt('Введіть дні')));
     let month = (Number(prompt('Введіть місяць')));
     let year = (Number(prompt('Введіть рік')));
-    
-    let daysOfMonth; 
+
+    let daysOfMonth;
 
     let year400 = year % 400;
     let year100 = year % 100;
@@ -420,12 +419,12 @@ function age() {
 
         if (daysOfMonth > days) {
             nextDays = days + 1;
-          
+
         } else if (daysOfMonth == days && month < 12 ) {
             nextDays = 1;
             nextmonth = month +1;
-          
-          
+
+
         } else if (daysOfMonth == days && month == 12 ){
              nextDays = 1;
              nextmonth = 1;
@@ -437,3 +436,5 @@ function age() {
 
 }
 /* ========================= Задача 10 кінець  */
+
+

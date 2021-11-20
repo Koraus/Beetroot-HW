@@ -124,7 +124,14 @@
         let g = (a - n) === n;
         return g;
     }
+
     function perfectNumberForRange(firstN, lastN) {
+        
+        let lastNRevers;
+        if (firstN > lastN){
+          lastNRevers = firstN;
+          firstN = lastN
+        } else {lastNRevers = lastN }
 
 
         for (let i = firstN; i <= lastN; i++) {

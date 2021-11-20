@@ -68,13 +68,13 @@
 
     }
 
-    // let printFirstUnpurchased = shopList.slice();
+    let printFirstUnpurchased = shopList.slice();
 
-    // printFirstUnpurchased.sort(function(left, right) {
-    // return left.isPurchased - right.isPurchased; 
-    // });
-    // console.log(printFirstUnpurchased);
-    // console.log(shopList); 
+    printFirstUnpurchased.sort(function(left, right) {
+    return left.isPurchased - right.isPurchased; 
+    });
+    console.log(printFirstUnpurchased);
+    console.log(shopList); 
 }
 
 // 2. Создать массив, описывающий чек в магазине. Каждый элемент массива состоит из названия товара, количества и цены за единицу товара. Написать следующие функции:
