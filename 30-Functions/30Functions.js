@@ -126,7 +126,7 @@
     }
 
     function perfectNumberForRange(firstN, lastN) {
-        
+
         let lastNRevers;
         if (firstN > lastN){
           lastNRevers = firstN;
@@ -134,7 +134,7 @@
         } else {lastNRevers = lastN }
 
 
-        for (let i = firstN; i <= lastN; i++) {
+        for (let i = firstN; i <= lastNRevers; i++) {
             if (isPerfectNumber(i) === true) {
                 console.log(i)
             }
