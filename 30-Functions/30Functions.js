@@ -12,7 +12,6 @@
             return 1;
         }
         return 0;
-    }
     const firstNumber = (Number(prompt('Введіть перше число')));
     const secondNumber = (Number(prompt('Введіть друге число')));
 

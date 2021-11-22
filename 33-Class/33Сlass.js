@@ -37,7 +37,7 @@ if (false) {
     console.log(circle1.calculateArea())
     console.log(circle1.calculateLength())
 }
-if (true) {
+if (false) {
     // 2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
 
     // поле, которое хранит цвет маркера;
@@ -105,33 +105,9 @@ if (true) {
 
 }
 
-if (false) {
-
-    class ClassA {
-        constructor(c) {
-            this._c = c;
-        }
-
-        methodA(a, b) {
-            return a + b * this._c;
-        }
-    }
-
-    class ClassB extends ClassA {
-        constructor(d) {
-            super(5);
-            this._d = d;
-        }
-
-        methodB(k, l) {
-            return this.methodA - k * this.d + Math.pow(l, this._c);
-        }
-    }
-
-    const a = new ClassA(5);
-    console.log(a.methodA(3, 6));
-
-
-    const b = new ClassB(3, 45);
-    console.log(b.methodB(14, 144));
+if(true) {
+// Завдання 3
+// Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
+// Реалізуй клас EmpTable для генерації HTML-коду таблиці зі списком працівників банку. Масив працівників необхідно передавати через конструктор, а отримувати HTML-код за допомогою методу getHtml ().
+// Створи об'єкт класу EmpTable і виведи на екран результат роботи методу getHtml ().
 }
