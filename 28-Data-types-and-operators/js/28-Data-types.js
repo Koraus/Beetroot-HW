@@ -100,7 +100,9 @@ function age() {
     }
     else if (a == 0) {
         b = specialSymbols['0'];
-    };
+    } else {
+        
+    }
     // непредусмотренно дефолтный вывод, в случае если не один не совпал.
     console.log(b);
 }
