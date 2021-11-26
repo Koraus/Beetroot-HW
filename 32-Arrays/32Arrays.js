@@ -9,6 +9,7 @@
 {
 
     // виведення в спсиок спочатку некуплених
+    
     let shoppingСart = shopList.slice();
     addItem(shoppingСart, 'Salt');
     console.log(shoppingСart)
@@ -262,7 +263,9 @@ console.log(as)
 
 
 // Функция сортировки аудиторий по количеству мест;
-function sortingByNumberOfSeats (){};
+function sortingByNumberOfSeats (auditorium){
+    let printSortByNumOfSeats = auditoriums.sort(auditorium => auditorium['number of seats']);
+};
 
 
 // Функция сортировки аудиторий по названию (по алфавиту).

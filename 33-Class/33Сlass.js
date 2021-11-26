@@ -1,4 +1,4 @@
-if (false) {
+if (true) {
     // 1) Реализовать класс, описывающий окружность. В классе должны быть следующие компоненты:
     // поле, хранящее радиус окружности;
     // get-свойство, возвращающее радиус окружности;
@@ -27,6 +27,7 @@ if (false) {
         };
         calculateLength() {
             return Math.PI * 2 * this._radius
+           
         };
 
     }
@@ -34,8 +35,8 @@ if (false) {
     console.log(circle1);
     console.log(circle1.radius);
     console.log(circle1.diameter);
-    console.log(circle1.calculateArea())
-    console.log(circle1.calculateLength())
+    console.log(circle1.calculateArea(50))
+    console.log(circle1.calculateLength(40))
 }
 if (false) {
     // 2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
@@ -105,7 +106,7 @@ if (false) {
 
 }
 
-if(true) {
+if(false) {
 // Завдання 3
 // Реалізуй клас Employee, що описує працівника, і створи масив працівників банку.
 // Реалізуй клас EmpTable для генерації HTML-коду таблиці зі списком працівників банку. Масив працівників необхідно передавати через конструктор, а отримувати HTML-код за допомогою методу getHtml ().
