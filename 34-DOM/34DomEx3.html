@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 DOM Ex3</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 90em;
+            justify-content: center;
+            align-items: center;
+        }
+        .еraffic-light{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            width: 260px ;
+            background: #000;
+        }
+        .lamp-red{
+            width: 200px;
+            height: 200px;
+            border: gray 3px solid;
+            border-radius: 50%; 
+            margin-bottom: 10px;
+        }
+        .lamp-yellow{
+            width: 200px;
+            height: 200px;
+            border: gray 3px solid;
+            border-radius: 50%; 
+            margin-bottom: 10px;
+        }
+        .lamp-green{
+            width: 200px;
+            height: 200px;
+            border: gray 3px solid;
+            border-radius: 50%; 
+        }
+        .btn-next-color{
+            font-size: 30px;
+            color:indianred;
+            margin-top: 40px;
+            width: 260px;
+            height: 100px;
+            background: rgb(237, 237, 145);
+        }
+        .btn-next-color:active{
+            background: rgb(137, 237, 145);
+        }
+        .lamp-red-active{
+            background: red;
+        }
+        .lamp-yellow-active{
+            background: yellow;
+        }
+        .lamp-green-active{
+            background: green;
+        }
+      
+
+    </style>
+</head>
+<body>
+
+<div class="еraffic-light">
+    <div class="lamp-red lamp-red-active"></div>
+    <div class="lamp-yellow "></div>
+    <div class="lamp-green"></div>
+</div>
+<button class="btn-next-color">
+        Swich color
+</button>
+
+
+    <script>
+        const btnNextColor = document.querySelector('.btn-next-color');
+        const redLampStatus = document.querySelector('.lamp-red');
+        const yellowLampStatus = document.querySelector('.lamp-yellow');
+        const greenLampStatus = document.querySelector('.lamp-green');
+        
+    
+        btnNextColor.onclick = function (){
+
+        if(redLampStatus.classList.contains('lamp-red-active')) {
+
+            redLampStatus.classList.remove('lamp-red-active')
+            yellowLampStatus.classList.add('lamp-yellow-active')
+
+        } else if (yellowLampStatus.classList.contains('lamp-yellow-active')) { 
+            yellowLampStatus.classList.remove('lamp-yellow-active')
+            greenLampStatus.classList.add('lamp-green-active');
+        } else { 
+            greenLampStatus.classList.remove('lamp-green-active') 
+            redLampStatus.classList.add('lamp-red-active');
+        }
+           
+
+    }
+    </script>
+</body>
+</html>

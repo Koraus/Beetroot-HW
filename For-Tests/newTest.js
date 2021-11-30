@@ -1,30 +1,26 @@
-class Circle {
 
-    constructor(radius) {
-        this._radius = radius;
-    }
-    get radius() {
-        return this._radius;
-    }
-    set radius(value) {
-        this._radius = value;
-    }
-    get diameter() {
-        return this._radius * 2;
-       
-    }
-    // diameter1() {
-    //     return this._radius * 2;
-    // }
-    calculateArea() {
-        return Math.PI * (this._radius ** 2)
-    };
-    calculateLength() {
-        return Math.PI * this.diameter
-       
-    };
+function objConstructor (firsName, lastName ){
+_this.firsName = firsName;
+_this.lastName = lastName;
 
+
+ return _this;
 }
 
-const myCircle = new Circle (10);
-console.log(myCircle.calculateLength())
+
+function isTen (a){
+    if (a === 10){
+        return true;
+    }else {return false}
+}
+
+console.log(isTen(9))
+function loadScript(src, callback) {
+    let script = document.createElement('script');
+    script.src = src;
+  
+    script.onload = () => callback(null, script);
+    script.onerror = () => callback(new Error(`Не удалось загрузить скрипт ${src}`));
+  
+    document.head.append(script);
+  }
